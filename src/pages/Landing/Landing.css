@@ -1,0 +1,16 @@
+#section1 {
+    height: 100vh;
+  }  
+
+.landingLogoRow {
+   padding-top: 25vh;
+}
+
+.subtitleRow {
+    margin-top: 2.5em;
+}
+
+#subtitle {
+    text-align: center;
+    font-variant: small-caps;
+  }

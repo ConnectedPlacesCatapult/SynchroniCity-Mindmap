@@ -1,3 +1,14 @@
 #topicsHeader {
     text-align: center;
 }
+
+#topicsText {
+    text-align: center;
+}
+
+.topicDiv {
+    width: 25%;
+    height: 5em;
+    display: inline-block;
+    text-align: center;
+}
