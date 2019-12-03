@@ -1,0 +1,28 @@
+.cls-1 {
+    fill: #555;
+}
+
+.cls-2 {
+    fill:#00b4ff;
+}
+
+.logoWrapper {
+    text-align: center;
+}
+
+#section1 svg {
+    height: 4em;
+}
+
+#navbar .wrapper svg {
+    height: 1.25em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 3%;
+}
+
+svg:hover {
+    cursor: pointer;
+}
+

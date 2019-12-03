@@ -1,0 +1,11 @@
+#CTA {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#CTA:hover {
+    cursor: pointer;
+    color: blue;
+}

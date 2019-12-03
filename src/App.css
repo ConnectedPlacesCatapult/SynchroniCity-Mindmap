@@ -1,10 +1,23 @@
-body, html {
-  margin: 0 auto;
+html, body {
+  margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
+}
+
+.App {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-image: url('./images/bg.jpg');
+  background-size: cover;
+  color: white;
+  overflow: hidden;
 }
 
 h1 {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 2em;
+}
+
+p {
+  font-weight: 300;
+  font-size: 1em;
 }
