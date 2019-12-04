@@ -5,6 +5,7 @@ export let tag0Unique;
 export let tagAllUnique;
 
 export const getTag0 = () => {
+
     return new Promise((resolve, reject) => {
         Tabletop.init({
             key: '1nogRbK3sIbF0T2bUPar9YLqvKPUWwFaSk5jk_hGBq-g',
@@ -20,13 +21,12 @@ export const getTag0 = () => {
                     var tag0 = rows[step]['tag0'];
                     tag0Array.push(tag0)
                     }
-                var tag0Unique = [];
                 resolve(tag0Unique = Array.from(new Set(tag0Array)));
-                // console.log('tag0 --->', tag0Unique);
                 console.log('Imported Tag0')
             },
         });
     });
+    
 }
 
 
@@ -34,7 +34,6 @@ export const getTags = (rows, tag0) => {
     return new Promise((resolve, reject) => {
         var tagAll = []
         var filteredStandards = []
-        // console.log(rows)
         for (let step = 0; step < Object.keys(rows).length; step++) {
             if (rows[step]['tag0'] === tag0) {
                 tagAll.push(rows[step]['tag1']);
@@ -45,15 +44,10 @@ export const getTags = (rows, tag0) => {
                 tagAll.push(rows[step]['tag6']);
                 tagAll.push(rows[step]['tag7']);
                 filteredStandards.push(rows[step]);
+                }
             }
-            }
-        // console.log(tagAll);
-        var tagAllUnique = [];
         resolve(tagAllUnique = Array.from(new Set(tagAll.filter(function (el) {
             return el !== "";
             }))));
-        // console.log('All tags for tag0 --->',tag0, tagAllUnique);
-        // console.log('All standards for these tag0 --->',tag0, filteredStandards);
-        console.log('Retrieved tags for', tag0)
     });
 }

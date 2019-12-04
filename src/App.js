@@ -8,11 +8,10 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   useEffect(() => {
-    var tag0Array = [];
-    var allTagsArray = [];
+    // tag0 = click button
     var tag0 = 'MIMs'
-    // getTag0();
-    getTag0().then(() => {getTags(rows, tag0)}).then(() => console.log(tag0Unique));
+    getTag0().then(() => {getTags(rows, tag0)}).then(() => console.log(tagAllUnique));
+    
   });
 
   return (
