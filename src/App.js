@@ -21,8 +21,8 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Navbar /> */}
-      <Landing />
+      <Navbar />
+      {/* <Landing /> */}
       <Topics />
     </div>
   );

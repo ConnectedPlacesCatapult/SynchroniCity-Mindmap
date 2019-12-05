@@ -49,6 +49,7 @@ export const getTags = (rows, tag0) => {
         resolve(tagAllUnique = Array.from(new Set(tagAll.filter(function (el) {
             return el !== "";
             }))));
+            console.log(filteredStandards); 
     });
 }
 

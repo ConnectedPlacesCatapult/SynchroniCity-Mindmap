@@ -1,3 +1,8 @@
+#section2 {
+    height: 100vh;
+    padding-top: 25vh;
+}
+
 #topicsHeader {
     text-align: center;
 }
@@ -8,7 +13,12 @@
 
 .topicDiv {
     width: 25%;
-    height: 5em;
+    height: 10em;
     display: inline-block;
     text-align: center;
+}
+
+.folder {
+    width: 50%;
+    padding: 5px;
 }
