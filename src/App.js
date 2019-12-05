@@ -2,20 +2,10 @@ import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import Landing from './pages/Landing/Landing';
 import Topics from './pages/Topics/Topics';
-import Folder from './components/Folder/Folder';
-import SynchronicityLogo from './components/Synchronicity/SynchronicityLogo';
-import {
-  getTag0,
-  getTags,
-  rows,
-  tag0Unique,
-  tagAllUnique
-} from './api/spreadsheet';
-import generateContent from './functions/generateContent.jsx';
+import Standards from './pages/Standards/Standards';
+import { importSheet, getTag0, getTags, rows, tag0Unique, tagAllUnique, filteredStandards, filteredSubStandards, getFilteredSubStandards } from './api/spreadsheet';
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-
-const folderRed = require('./images/folder_red.png')
 
 function App() {
   useEffect(() => {
@@ -25,12 +15,23 @@ function App() {
       .then(() => { generateContent.tag0(); });
 
   }); 
+    // tag0 = click button topic
+    var tag0Select = 'MIMs'
+    // subtag = click button subtopic
+    var subTagSelect = 'API'
+    getTag0().then(() => {getTags(rows, tag0Select)}).then(() => {getFilteredSubStandards(filteredStandards, subTagSelect)}).then(() => console.log(filteredSubStandards));
+    // tag0Unique stores all topics
+    // tagAllUnique stores all subtopics based on a topic
+    // filteredStandards stores all standards based on a topic
+    // filteredSubStandard stores all standards based on a subtopic and topic
+  });
 
   return (
     <div className="App">
       <Navbar />
       {/* <Landing /> */}
       <Topics />
+      <Standards />
     </div>
   );
 }

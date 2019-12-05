@@ -3,6 +3,8 @@ import Tabletop from 'tabletop';
 export let rows;
 export let tag0Unique;
 export let tagAllUnique;
+export let filteredStandards=[];
+export let filteredSubStandards=[];
 
 export const getTag0 = () => {
 
@@ -50,5 +52,22 @@ export const getTags = (rows, tag0) => {
             return el !== "";
             }))));
             console.log(filteredStandards); 
+    });
+}
+
+export const getFilteredSubStandards = (filteredStandards, tagSelect) => {
+    return new Promise((resolve, reject) => {
+        console.log(filteredStandards)
+    for (let i = 0; i < Object.keys(filteredStandards).length; i++) {
+        for (let j = 1; j < 8; j++) {
+            var tagStr = 'tag'
+            var tagName = ''
+            tagName = tagStr.concat(j)
+        if (filteredStandards[i][tagName] === tagSelect) {
+            filteredSubStandards.push(filteredStandards[i]);
+            }
+        }
+    }
+    resolve(filteredSubStandards)
     });
 }
