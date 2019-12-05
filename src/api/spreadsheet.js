@@ -31,11 +31,11 @@ export const getTag0 = () => {
 }
 
 
-export const getTags = (rows, tag0) => {
+export const getTags = (rows, tag0Select) => {
     return new Promise((resolve, reject) => {
         var tagAll = []
         for (let step = 0; step < Object.keys(rows).length; step++) {
-            if (rows[step]['tag0'] === tag0) {
+            if (rows[step]['tag0'] === tag0Select) {
                 tagAll.push(rows[step]['tag1']);
                 tagAll.push(rows[step]['tag2']);
                 tagAll.push(rows[step]['tag3']);
@@ -54,15 +54,14 @@ export const getTags = (rows, tag0) => {
 }
 
 
-export const getFilteredSubStandards = (filteredStandards, tag_select) => {
+export const getFilteredSubStandards = (filteredStandards, subTagSelect) => {
     return new Promise((resolve, reject) => {
-        console.log(filteredStandards)
     for (let i = 0; i < Object.keys(filteredStandards).length; i++) {
         for (let j = 1; j < 8; j++) {
-            var tag_str = 'tag'
-            var tag_name = ''
-            tag_name = tag_str.concat(j)
-        if (filteredStandards[i][tag_name] == tag_select) {
+            var tagStr = 'tag'
+            var tagName = ''
+            tagName = tagStr.concat(j)
+        if (filteredStandards[i][tagName] === subTagSelect) {
             filteredSubStandards.push(filteredStandards[i]);
             }
         }
