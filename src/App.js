@@ -22,16 +22,7 @@ function App() {
     // tag0 = click button
     var tag0 = 'MIMs';
     getTag0().then(() => { getTags(rows, tag0) })
-      .then(() => { generateContent.tag0(); })
-      .then(() => {
-        for (let i = 1; i <= tag0Unique.length; i++) {
-          document.querySelector('.topicDiv:nth-child(' + i + ')').innerHTML = <Folder /> + document.querySelector('.topicDiv:nth-child(' + i + ')').innerHTML
-          let test = document.querySelector('.topicDiv:nth-child(12)');
-          console.log(test)
-        }
-      });
-
-    console.log(rows);
+      .then(() => { generateContent.tag0(); });
 
   }); 
 
@@ -40,7 +31,6 @@ function App() {
       <Navbar />
       {/* <Landing /> */}
       <Topics />
-      <Folder />
     </div>
   );
 }

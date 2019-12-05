@@ -14,14 +14,13 @@
 
 .topicDiv {
     width: 25%;
-    height: 10em;
+    height: 7.5em;
     display: inline-block;
-    text-align: center;
+
 }
 
 .folder {
     width: 50%;
-    padding: 5px;
 }
 
 @media only screen and (max-width: 767px) {
