@@ -22,7 +22,7 @@ export const getTag0 = () => {
                     tag0Array.push(tag0)
                     }
                 resolve(tag0Unique = Array.from(new Set(tag0Array)));
-                console.log('Imported Tag0')
+                // console.log(tag0Unique);
             },
         });
     });
@@ -49,5 +49,6 @@ export const getTags = (rows, tag0) => {
         resolve(tagAllUnique = Array.from(new Set(tagAll.filter(function (el) {
             return el !== "";
             }))));
+            console.log(filteredStandards); 
     });
 }
