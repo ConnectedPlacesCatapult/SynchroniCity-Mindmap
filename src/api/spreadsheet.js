@@ -3,6 +3,8 @@ import Tabletop from 'tabletop';
 export let rows;
 export let tag0Unique;
 export let tagAllUnique;
+export let filteredStandards=[];
+export let filteredSubStandards=[];
 
 export const getTag0 = () => {
 
@@ -22,7 +24,6 @@ export const getTag0 = () => {
                     tag0Array.push(tag0)
                     }
                 resolve(tag0Unique = Array.from(new Set(tag0Array)));
-                // console.log(tag0Unique);
             },
         });
     });
@@ -33,7 +34,6 @@ export const getTag0 = () => {
 export const getTags = (rows, tag0) => {
     return new Promise((resolve, reject) => {
         var tagAll = []
-        var filteredStandards = []
         for (let step = 0; step < Object.keys(rows).length; step++) {
             if (rows[step]['tag0'] === tag0) {
                 tagAll.push(rows[step]['tag1']);
@@ -50,5 +50,23 @@ export const getTags = (rows, tag0) => {
             return el !== "";
             }))));
             console.log(filteredStandards); 
+    });
+}
+
+
+export const getFilteredSubStandards = (filteredStandards, tag_select) => {
+    return new Promise((resolve, reject) => {
+        console.log(filteredStandards)
+    for (let i = 0; i < Object.keys(filteredStandards).length; i++) {
+        for (let j = 1; j < 8; j++) {
+            var tag_str = 'tag'
+            var tag_name = ''
+            tag_name = tag_str.concat(j)
+        if (filteredStandards[i][tag_name] == tag_select) {
+            filteredSubStandards.push(filteredStandards[i]);
+            }
+        }
+    }
+    resolve(filteredSubStandards)
     });
 }
