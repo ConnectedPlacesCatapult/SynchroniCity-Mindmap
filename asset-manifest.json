@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/SynchroniCity-Mindmap/static/css/main.f9ca9472.chunk.css",
-    "main.js": "/SynchroniCity-Mindmap/static/js/main.963046fe.chunk.js",
-    "main.js.map": "/SynchroniCity-Mindmap/static/js/main.963046fe.chunk.js.map",
+    "main.css": "/SynchroniCity-Mindmap/static/css/main.9a8c5760.chunk.css",
+    "main.js": "/SynchroniCity-Mindmap/static/js/main.68d89b70.chunk.js",
+    "main.js.map": "/SynchroniCity-Mindmap/static/js/main.68d89b70.chunk.js.map",
     "runtime-main.js": "/SynchroniCity-Mindmap/static/js/runtime-main.aed966f6.js",
     "runtime-main.js.map": "/SynchroniCity-Mindmap/static/js/runtime-main.aed966f6.js.map",
     "static/css/2.17e5ed98.chunk.css": "/SynchroniCity-Mindmap/static/css/2.17e5ed98.chunk.css",
-    "static/js/2.02a79fa9.chunk.js": "/SynchroniCity-Mindmap/static/js/2.02a79fa9.chunk.js",
-    "static/js/2.02a79fa9.chunk.js.map": "/SynchroniCity-Mindmap/static/js/2.02a79fa9.chunk.js.map",
+    "static/js/2.7ed2300d.chunk.js": "/SynchroniCity-Mindmap/static/js/2.7ed2300d.chunk.js",
+    "static/js/2.7ed2300d.chunk.js.map": "/SynchroniCity-Mindmap/static/js/2.7ed2300d.chunk.js.map",
     "index.html": "/SynchroniCity-Mindmap/index.html",
-    "precache-manifest.b97aa5a4c9f1a8b9ae1efd611e5d4bbe.js": "/SynchroniCity-Mindmap/precache-manifest.b97aa5a4c9f1a8b9ae1efd611e5d4bbe.js",
+    "precache-manifest.66428f3d8d042e835080dae9044047a5.js": "/SynchroniCity-Mindmap/precache-manifest.66428f3d8d042e835080dae9044047a5.js",
     "service-worker.js": "/SynchroniCity-Mindmap/service-worker.js",
     "static/css/2.17e5ed98.chunk.css.map": "/SynchroniCity-Mindmap/static/css/2.17e5ed98.chunk.css.map",
-    "static/css/main.f9ca9472.chunk.css.map": "/SynchroniCity-Mindmap/static/css/main.f9ca9472.chunk.css.map",
+    "static/css/main.9a8c5760.chunk.css.map": "/SynchroniCity-Mindmap/static/css/main.9a8c5760.chunk.css.map",
     "static/media/App.css": "/SynchroniCity-Mindmap/static/media/bg.08c287f1.jpg",
     "static/media/folder_red.png": "/SynchroniCity-Mindmap/static/media/folder_red.90acdd63.png",
     "static/media/synchronicity_logo_white.png": "/SynchroniCity-Mindmap/static/media/synchronicity_logo_white.41c52f23.png"
@@ -20,8 +20,8 @@
   "entrypoints": [
     "static/js/runtime-main.aed966f6.js",
     "static/css/2.17e5ed98.chunk.css",
-    "static/js/2.02a79fa9.chunk.js",
-    "static/css/main.f9ca9472.chunk.css",
-    "static/js/main.963046fe.chunk.js"
+    "static/js/2.7ed2300d.chunk.js",
+    "static/css/main.9a8c5760.chunk.css",
+    "static/js/main.68d89b70.chunk.js"
   ]
 }
