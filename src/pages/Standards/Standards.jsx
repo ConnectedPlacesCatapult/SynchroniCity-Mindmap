@@ -1,8 +1,12 @@
 import React from 'react';
 import './Standards.css';
 
+<<<<<<< HEAD
 const Standards = () => {
     return (
+=======
+const Standards = () => (
+>>>>>>> eaeca6acd4aca990f4efee0b7a1a91ed11ddaf28
     <div id= "standardsContainer">
         <div className= "standardsTopic row">
             <div className="standardsTopicContainer col-lg=5 col-md-5 col-sm-10 offset-lg-5 offset-md-5 offset-sm-1">
@@ -22,7 +26,12 @@ const Standards = () => {
             </div>
         </div>
     </div>
+<<<<<<< HEAD
     )
 }
+=======
+
+)
+>>>>>>> eaeca6acd4aca990f4efee0b7a1a91ed11ddaf28
 
 export default Standards;

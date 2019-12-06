@@ -1,9 +1,9 @@
 #section2 {
-    height: 100vh;
+    height: 200vh;
     padding-top: 25vh;
 }
 
-#topicsHeader {
+.topicsHeader {
     text-align: center;
     margin-top: 15vh;
 }
@@ -14,14 +14,17 @@
 
 .topicDiv {
     width: 25%;
-    height: 10em;
+    height: 7.5em;
     display: inline-block;
-    text-align: center;
+
 }
 
 .folder {
     width: 50%;
-    padding: 5px;
+}
+
+.subtopicsRow {
+    margin-top: 5em;
 }
 
 @media only screen and (max-width: 767px) {
