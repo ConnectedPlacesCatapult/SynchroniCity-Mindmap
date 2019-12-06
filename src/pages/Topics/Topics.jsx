@@ -11,7 +11,7 @@ const Topics = () => {
                 </div>
 
                 {/* This is where all top level topics will be rendered */}
-                <div id="tag0Container" className="col-lg-7 col-md-6 col-sm-10">
+                <div id="tag0Container" className="tag0Container col-lg-7 col-md-6 col-sm-10">
                 </div>
             </div>
 
