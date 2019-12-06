@@ -22,10 +22,10 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar />
+      {<Navbar />}
       {/* <Landing /> */}
-      <Topics />
-      <Standards />
+      {/* {<Topics />} */}
+      {<Standards />}
     </div>
   );
 }
