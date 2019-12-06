@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/SynchroniCity-Mindmap/static/css/main.83f6b316.chunk.css",
+    "main.js": "/SynchroniCity-Mindmap/static/js/main.469e9ccb.chunk.js",
+    "main.js.map": "/SynchroniCity-Mindmap/static/js/main.469e9ccb.chunk.js.map",
+    "runtime-main.js": "/SynchroniCity-Mindmap/static/js/runtime-main.aed966f6.js",
+    "runtime-main.js.map": "/SynchroniCity-Mindmap/static/js/runtime-main.aed966f6.js.map",
+    "static/css/2.17e5ed98.chunk.css": "/SynchroniCity-Mindmap/static/css/2.17e5ed98.chunk.css",
+    "static/js/2.4c1d49a1.chunk.js": "/SynchroniCity-Mindmap/static/js/2.4c1d49a1.chunk.js",
+    "static/js/2.4c1d49a1.chunk.js.map": "/SynchroniCity-Mindmap/static/js/2.4c1d49a1.chunk.js.map",
+    "index.html": "/SynchroniCity-Mindmap/index.html",
+    "precache-manifest.43777dadf2201f1df6a645000b7d920e.js": "/SynchroniCity-Mindmap/precache-manifest.43777dadf2201f1df6a645000b7d920e.js",
+    "service-worker.js": "/SynchroniCity-Mindmap/service-worker.js",
+    "static/css/2.17e5ed98.chunk.css.map": "/SynchroniCity-Mindmap/static/css/2.17e5ed98.chunk.css.map",
+    "static/css/main.83f6b316.chunk.css.map": "/SynchroniCity-Mindmap/static/css/main.83f6b316.chunk.css.map",
+    "static/media/App.css": "/SynchroniCity-Mindmap/static/media/bg.08c287f1.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.aed966f6.js",
+    "static/css/2.17e5ed98.chunk.css",
+    "static/js/2.4c1d49a1.chunk.js",
+    "static/css/main.83f6b316.chunk.css",
+    "static/js/main.469e9ccb.chunk.js"
+  ]
+}
