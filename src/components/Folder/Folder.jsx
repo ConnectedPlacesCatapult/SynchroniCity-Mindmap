@@ -1,12 +1,11 @@
 import React from 'react';
 import './Folder.css';
+const Asset = require('../../images/folder_red.png');
 
-const Folder = () => {
-    return(
+const Folder = () => (
         <div id="folderContainer">
-            <img className="folder" src={require("../../images/folder_red.png")} alt="Folder Icon" />
+            <img src='./static/media/folder_red.90acdd63.png' alt="icon" />
         </div>
     )
-}
 
 export default Folder;

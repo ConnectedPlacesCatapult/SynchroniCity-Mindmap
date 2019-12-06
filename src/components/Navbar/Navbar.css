@@ -5,3 +5,11 @@
     height: 3em;
     width: 100%;
 }
+
+.navbarLogo {
+    height: 1.25em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 3%;
+}
