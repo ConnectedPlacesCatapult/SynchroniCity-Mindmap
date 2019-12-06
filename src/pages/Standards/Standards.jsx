@@ -1,7 +1,7 @@
 import React from 'react';
 import './Standards.css';
 
-const Standards = () => {
+const Standards = () => (
     <div id= "standardsContainer">
         <div className = "standardsResult row">
             <div className = "standardsNavigationContainer col-lg=3 col-md-3 offset-lg-1 offset-md-1">
@@ -15,6 +15,6 @@ const Standards = () => {
         </div>
     </div>
 
-}
+)
 
 export default Standards;

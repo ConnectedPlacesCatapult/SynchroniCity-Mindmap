@@ -3,6 +3,7 @@ import Navbar from './components/Navbar/Navbar';
 import Landing from './pages/Landing/Landing';
 import Topics from './pages/Topics/Topics';
 import Standards from './pages/Standards/Standards';
+import generateContent, { value, getId } from './functions/generateContent';
 import { importSheet, getTag0, getTags, rows, tag0Unique, tagAllUnique, filteredStandards, filteredSubStandards, getFilteredSubStandards } from './api/spreadsheet';
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
@@ -24,14 +25,13 @@ function App() {
     // tagAllUnique stores all subtopics based on a topic
     // filteredStandards stores all standards based on a topic
     // filteredSubStandard stores all standards based on a subtopic and topic
-  });
 
   return (
     <div className="App">
       <Navbar />
       {/* <Landing /> */}
       <Topics />
-      <Standards />
+      {/* <Standards /> */}
     </div>
   );
 }
