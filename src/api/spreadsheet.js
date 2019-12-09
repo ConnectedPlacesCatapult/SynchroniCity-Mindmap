@@ -45,7 +45,6 @@ export const getTags = (rows, tag0) => {
                 tagAll.push(rows[step]['tag5']);
                 tagAll.push(rows[step]['tag6']);
                 tagAll.push(rows[step]['tag7']);
-                console.log(rows[step].tag0);
                 filteredStandards.push(rows[step]);
                 }
             }
