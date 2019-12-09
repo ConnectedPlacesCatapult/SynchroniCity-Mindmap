@@ -4,6 +4,8 @@ export let rows;
 export let tag0Unique;
 export let tagAllUnique;
 export let filteredStandards = [];
+export let filteredStandards=[];
+
 export let filteredSubStandards=[];
 
 export const getTag0 = () => {
@@ -24,7 +26,6 @@ export const getTag0 = () => {
                     tag0Array.push(tag0)
                     }
                 resolve(tag0Unique = Array.from(new Set(tag0Array)));
-                // console.log(tag0Unique);
             },
         });
     });
@@ -32,12 +33,13 @@ export const getTag0 = () => {
 }
 
 
-export const getTags = (rows, tag0) => {
+export const getTags = (rows, tag0Select) => {
     return new Promise((resolve, reject) => {
         var tagAll = []
         filteredStandards = [];
         for (let step = 0; step < Object.keys(rows).length; step++) {
             if (rows[step].tag0 === tag0) {
+        for (let step = 0; step < Object.keys(rows).length; step++) {
                 tagAll.push(rows[step]['tag1']);
                 tagAll.push(rows[step]['tag2']);
                 tagAll.push(rows[step]['tag3']);
@@ -56,9 +58,15 @@ export const getTags = (rows, tag0) => {
     });
 }
 
+
 export const getFilteredSubStandards = (filteredStandards, tagSelect) => {
     return new Promise((resolve, reject) => {
         console.log(filteredStandards)
+
+
+export const getFilteredSubStandards = (filteredStandards, subTagSelect) => {
+    return new Promise((resolve, reject) => {
+
     for (let i = 0; i < Object.keys(filteredStandards).length; i++) {
         for (let j = 1; j < 8; j++) {
             var tagStr = 'tag'
@@ -67,6 +75,8 @@ export const getFilteredSubStandards = (filteredStandards, tagSelect) => {
         if (filteredStandards[i][tagName] === tagSelect) {
             filteredSubStandards.push(filteredStandards[i]);
             
+        if (filteredStandards[i][tagName] === subTagSelect) {
+            filteredSubStandards.push(filteredStandards[i]);
             }
         }
     }
