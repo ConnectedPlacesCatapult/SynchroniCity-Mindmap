@@ -51,7 +51,7 @@ export const getTags = (rows, tag0) => {
         resolve(tagAllUnique = Array.from(new Set(tagAll.filter(function (el) {
             return el !== "";
             }))));
-            console.log(filteredStandards); 
+            console.log(filteredStandards);
     });
 }
 
@@ -70,5 +70,6 @@ export const getFilteredSubStandards = (filteredStandards, tagSelect) => {
         }
     }
     resolve(filteredSubStandards)
+    console.log(filteredSubStandards)
     });
 }

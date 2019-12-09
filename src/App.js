@@ -4,6 +4,7 @@ import Landing from './pages/Landing/Landing';
 import Topics from './pages/Topics/Topics';
 import Standards from './pages/Standards/Standards';
 import generateContent, { value, getId, standard, subtopic } from './functions/generateContent';
+import aesthetics from './functions/aesthetics';
 import { importSheet, getTag0, getTags, rows, tag0Unique, tagAllUnique, filteredStandards, filteredSubStandards, getFilteredSubStandards } from './api/spreadsheet';
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
@@ -15,8 +16,7 @@ function App() {
     getTag0().then(() => { getTags(rows, subtopic) })
       .then(() => { generateContent.tag0(); })
       .then(() => { generateContent.assignId(); })
-      .then(() => {  });
-      // .then(() => { generateContent.standards(); })
+      .then(() => { generateContent.subtopics() })
       
 
 

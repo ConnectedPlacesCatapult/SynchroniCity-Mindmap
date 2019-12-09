@@ -21,3 +21,19 @@ p {
   font-weight: 300;
   font-size: 1em;
 }
+
+.center {
+  text-align: center;
+}
+
+#resultsSection {
+  /* position: absolute; */
+  padding-top: 12.5vh;
+  height: 100vh;
+}
+
+#topicsSection {
+  /* position: absolute; */
+  padding-top: 25vh;
+  height: 100vh;
+}
