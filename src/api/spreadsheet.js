@@ -3,7 +3,7 @@ import Tabletop from 'tabletop';
 export let rows;
 export let tag0Unique;
 export let tagAllUnique;
-export let filteredStandards=[];
+export let filteredStandards = [];
 export let filteredSubStandards=[];
 
 export const getTag0 = () => {
@@ -35,9 +35,9 @@ export const getTag0 = () => {
 export const getTags = (rows, tag0) => {
     return new Promise((resolve, reject) => {
         var tagAll = []
-        var filteredStandards = []
+        filteredStandards = [];
         for (let step = 0; step < Object.keys(rows).length; step++) {
-            if (rows[step]['tag0'] === tag0) {
+            if (rows[step].tag0 === tag0) {
                 tagAll.push(rows[step]['tag1']);
                 tagAll.push(rows[step]['tag2']);
                 tagAll.push(rows[step]['tag3']);
@@ -45,6 +45,7 @@ export const getTags = (rows, tag0) => {
                 tagAll.push(rows[step]['tag5']);
                 tagAll.push(rows[step]['tag6']);
                 tagAll.push(rows[step]['tag7']);
+                console.log(rows[step].tag0);
                 filteredStandards.push(rows[step]);
                 }
             }
@@ -65,6 +66,7 @@ export const getFilteredSubStandards = (filteredStandards, tagSelect) => {
             tagName = tagStr.concat(j)
         if (filteredStandards[i][tagName] === tagSelect) {
             filteredSubStandards.push(filteredStandards[i]);
+            
             }
         }
     }

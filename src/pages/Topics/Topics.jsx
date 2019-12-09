@@ -24,7 +24,7 @@ const Topics = () => {
 
             <div className="subtopicsRow row">
                 <div className="col-lg-3 col-md-4 col-sm-10 offset-lg-1 offset-md-1 offset-sm-1">
-                    <h2 id="topicsHeader" className="topicdHeader">Select subtopic</h2>
+                    <h2 id="topicsHeader" className="topicsHeader">Select subtopic</h2>
                 </div>
 
                 {/* This is where all top level topics will be rendered */}
