@@ -6,8 +6,10 @@ html, body {
 
 .App {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  background-image: url('./images/bg.jpg');
+  background: url('./images/bg.jpg') no-repeat scroll center top;
   background-size: cover;
+  background-position-x: 0;
+  background-position-y: 0;
   color: white;
   overflow: hidden;
 }
@@ -24,12 +26,6 @@ p {
 
 .center {
   text-align: center;
-}
-
-#resultsSection {
-  /* position: absolute; */
-  padding-top: 12.5vh;
-  height: 100vh;
 }
 
 #topicsSection {

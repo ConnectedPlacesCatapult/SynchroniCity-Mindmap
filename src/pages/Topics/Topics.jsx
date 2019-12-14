@@ -35,14 +35,38 @@ const Topics = () => {
             { /* ========== START OF RESULTS SECTION ========== */}
             { /* ===== Results will be rendered here ===== */}
 
-            <div id="resultsSection" className="resultsRow row">
-                <div className="col-lg-2 col-md-2 col-sm-12 offset-lg-1 offset-md-1">
-                    <h2 className="topicsHeader">All Standards</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+            <div id="resultsSection">
+                <div id="subtopicNavigationContainer">
+                    <div className="row">
+                        <div className="col-lg-12 col-md-12 col-sm-12 center z">
+                            <div id="chosenTopicImg"></div>
+                        </div>
+                    </div>
+
+                    <div className="row">
+                        <div className="col-lg-4 col-md-6 col-sm-10 offset-lg-4 offset-md-3 offset-sm-1 center">
+                            <h2 id="chosenTopic">Chosen Topic</h2>
+                        </div>
+                    </div>
+
+                    <div className="row">
+                        <div className="col-lg-8 col-md-8 col-sm-10 offset-lg-2 offset-md-2 offset-sm-1 center">
+                            <ul id="topicList">
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
-                <div className="col-lg-8 col-md-8 col-sm-12">
-                    <div id="results" className="center"></div>
+                <div className="resultsRow row">
+                    <div className="col-lg-2 col-md-2 col-sm-12 offset-lg-1 offset-md-1">
+                        <h2 className="topicsHeader">All Standards</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                    </div>
+
+                    <div className="col-lg-8 col-md-8 col-sm-12">
+                        <div id="results" className="center"></div>
+                    </div>
+
                 </div>
 
 
@@ -55,6 +79,26 @@ const Topics = () => {
                     </div>
 
                     </div> */}
+
+                <div class="modal fade" id="resultContent" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        {/* <div class="modal-content"> */}
+                           
+                            {/* <div class="modal-body">
+                                <img src={require("../../images/Card_Result_Active.svg")} width="100%" />
+                                <h1>Standard title</h1>
+                                <p>standard abstract</p>
+                                <p>tags</p>
+                                 <a>url</a>
+                            </div> */}
+                            <div id="mymodal">
+                                <img id="modalImg" src={require('../../images/Card_Result_Active.svg')} />
+                                <h1>MY MODAL</h1>
+                            </div>
+                            
+                        {/* </div> */}
+                    </div>
+                </div>
             </div>
 
         </section>

@@ -1,3 +1,11 @@
+#topicsSection {
+    display: flex;
+}
+
+#resultsSection {
+    display: none;
+}
+
 .topicsHeader {
     text-align: center;
     margin-top: 15vh;
@@ -23,9 +31,10 @@
 }
 
 .resultsRow {
-    height: 100vh;
+    height: 85vh;
     overflow: hidden;
     text-overflow: ellipses;
+    margin-top: 3em;
 }
 
 #results {
@@ -38,11 +47,11 @@
     background-size: cover;
     background-repeat: none;
     display: inline-block;
-    margin: 0.75em 0.75em 0.75em 0.75em;
+    margin: 0.75em 0.5em 0.75em 0.5em;
     padding: 55px 25px 0 40px;
     color: black;
-    height: 298px;
-    width: 276px;
+    height: 270px;
+    width: 250px;
     vertical-align: top;
 }
 
@@ -60,6 +69,68 @@
     height: 7.5em;
     overflow: auto;
     text-overflow: ellipsis;
+}
+
+#subtopicNavigationContainer {
+    background-color: rgba(0, 255, 255, 0.25);
+    /* margin-top: 3em; */
+}
+
+#chosenTopicImg {
+    width: 7em;
+    height: 7em;
+    background-color: rgb(235, 139, 115);
+    margin: 0 auto;
+    transform: rotate(-10deg);
+    margin-top: 2em !important;
+    border-radius: 10px;
+}
+
+.z {
+    z-index: 1;
+}
+
+#chosenTopic {
+    background-color: white;
+    color: rgb(235, 139, 115);
+    border-radius: 1.5em;
+    padding: 5px 0 5px 0;
+}
+
+#topicList {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0 3em 0;
+}
+
+#topicList li {
+    display: inline-block;
+    margin: 0.35em 0.4em 0.35em 0.4em;
+    padding: 0 1em 0 1em;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    font-size: 18px;
+    transition-duration: 1s;
+}
+
+#topicList li:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.15);
+    transition-duration: 0.5s;
+}
+
+#mymodal {
+    text-align: center;
+    /* background-color: white; */
+    background-image: (url(../../images/bg.jpg));
+    background-size: cover;
+}
+
+#modalImg {
+    /* position: absolute; */
+    /* left: 50%;
+    transform: translateX(-50%); */
+    /* padding: 3em; */
 }
 
 @media only screen and (max-width: 767px) {

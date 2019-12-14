@@ -1,0 +1,11 @@
+#header {
+    height: 4em;
+    background-color: black;
+}
+
+#headerLogo {
+    height: 1.5em;
+    position: absolute;
+    left: 3%;
+    top: 2%;
+}

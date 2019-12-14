@@ -1,26 +1,48 @@
 const aesthetics = {
-    fade: (fadeOut, fadeIn, duration) => {
+    fade: (fadeIn, duration) => {
         return new Promise((resolve, reject) => {
-            let page1 = document.getElementById(fadeOut);
             let page2 = document.getElementById(fadeIn);
-            // page2.hidden = true;
-            page1.style.transitionDuration = duration + 's'; 
-            page2.style.transitionDuration = duration + 's';
+
+            page2.style.opacity = 0;
+
+            page2.style.transitionDuration = duration / 2 + 's';
 
             return new Promise((resolve, reject) => {
-                page1.style.opacity = 0;
-                setTimeout(() => {
-                    resolve('resolved');
-                }, duration * 250);
-                setTimeout(() => {
-                    page1.hidden = true;
-                }, duration * 1000);
+                if (fadeIn === 'topicsSection') {
+                    console.log(1);
+                    //ADD ALL OTHER SECTIONS TO THIS LIST
+                    document.getElementById('resultsSection').style.opacity = 0;
+                    document.getElementById('resultsSection').style.transitionDuration = duration / 2 + 's';
+
+                    setTimeout(() => {
+                        resolve(document.getElementById('resultsSection').style.display = 'none');
+                    }, duration * 500);
+                }
+                else if (fadeIn === 'resultsSection') {
+                    console.log(2);
+                    //ADD ALL OTHER SECTIONS TO THIS LIST
+                    document.getElementById('topicsSection').style.opacity = 0;
+                    document.getElementById('topicsSection').style.transitionDuration = duration / 2 + 's';
+
+                    setTimeout(() => {
+                        resolve(document.getElementById('topicsSection').style.display = 'none');
+                    }, duration * 500);
+                } else {
+                    console.log(fadeIn);
+                }
+
             }).then(() => {
-                page2.hidden = false;
-                page2.style.opacity = 0;
-                setTimeout(() => {
-                    page2.style.opacity = 1;
-                }, duration * 100);
+                if (fadeIn === 'topicsSection') {
+                    page2.style.display = 'flex';
+                    setTimeout(() => {
+                        page2.style.opacity = 1;
+                    }, duration * 100);
+                } else {
+                    page2.style.display = 'block';
+                    setTimeout(() => {
+                        page2.style.opacity = 1;
+                    }, duration * 100);
+                }
             });
         });
     },

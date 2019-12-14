@@ -1,13 +1,23 @@
-import React from 'react';
-import SynchronicityLogo from '../Synchronicity/SynchronicityLogo';
-import CTA from '../CTA/CTA';
+import React, { useState, useEffect } from 'react';
+import { navigate } from './Navbar';
 import './Navbar.css';
 
 const Navbar = () => {
-    return(
+    useEffect(() => {
+        setTimeout(() => {
+            document.getElementById('navTopic').classList.add('active');
+        }, 1000);
+    });
+
+    return (
         <div id="navbar" className="navbar">
-            <img className="navbarLogo" src={require("../../images/synchronicity_logo_white.png")} alt="Synchronicity Logo" />
-            <CTA />
+            <img className="navbarLogo" src={require("../../images/synchronicity_logo_black.svg")} alt="Synchronicity Logo" onClick={() => { navigate.topic(); }} />
+            <ul>
+                <li id="navAbout" onClick={() => { navigate.about(); }}>About</li>
+                <li id="navGI" onClick={() => { navigate.gi(); }}>Get Involved</li>
+                <li id="navTopic" onClick={() => { navigate.topic(); }}>Topic</li>
+                <li id="navSubtopic" onClick={() => { navigate.subtopic(); }}>Subtopic</li>
+            </ul>
         </div>
     )
 }

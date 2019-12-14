@@ -1,17 +1,57 @@
 #navbar {
-    position: fixed;
     margin: 0 auto;
     padding: 0;
-    height: 3em;
+    height: 7.55em;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: white;
     z-index: 100;
+    color: black;
+}
+
+#navbar {
+    align-content: center;
+}
+
+.navbarLogo:hover {
+    cursor: pointer;
+}
+
+#navbar ul {
+    align-content: center;
+    padding: 0;
+    margin: 0 auto;
+}
+
+#navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 1em 0 1em;
+    padding: 3px 1em 3px 1em;
+    background-color: rgb(240,240, 240);
+    border-radius: 20px;
+    font-size: 14px;
+    transition-duration: 0.25s;
+}
+
+#navbar ul li:hover {
+    background-color: rgb(202, 88, 88);
+    cursor: pointer;
+    color: white;
+    transition-duration: 0.25s;
+}
+
+.active {
+    background-color: rgb(202, 100, 100) !important;
+    color: white;
+}
+
+.active:hover {
+    background-color: rgb(202, 88, 88) !important;
+    color: white;
 }
 
 .navbarLogo {
     height: 1.25em;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     left: 3%;
 }

@@ -1,4 +1,5 @@
 import Tabletop from 'tabletop';
+import subIdArray from '../functions/generateContent';
 
 export let rows;
 export let tag0Unique;
@@ -55,21 +56,20 @@ export const getTags = (rows, tag0) => {
     });
 }
 
-export const getFilteredSubStandards = (filteredStandards, tagSelect) => {
+export const getFilteredSubStandards = (filteredStandards, array, arraySelector) => {
     return new Promise((resolve, reject) => {
-        console.log(filteredStandards)
-    for (let i = 0; i < Object.keys(filteredStandards).length; i++) {
+        filteredSubStandards = [];
+    for (let i = 0; i < filteredStandards.length; i++) {
         for (let j = 1; j < 8; j++) {
             var tagStr = 'tag'
             var tagName = ''
             tagName = tagStr.concat(j)
-        if (filteredStandards[i][tagName] === tagSelect) {
+        if (array.includes(filteredStandards[i][tagName]) && !filteredSubStandards.includes(filteredStandards[i]) && filteredStandards[i][tagName] === arraySelector) {
             filteredSubStandards.push(filteredStandards[i]);
-            
             }
         }
     }
-    resolve(filteredSubStandards)
-    console.log(filteredSubStandards)
+    resolve(console.log(filteredSubStandards))
+    
     });
 }
