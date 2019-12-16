@@ -1,0 +1,55 @@
+#CTASection {
+    display: none;
+}
+​
+#CTASectionDescription {
+    background-color: white;
+    height: fit-content;
+    padding: 1em 1em 7.5em 1em;
+    margin-right: 1em;
+    color: black;
+    border-radius: 15px;
+}
+​
+.CTARow {
+    margin-top: 5em;
+    margin-bottom: 3em;
+}
+​
+#CTAContent {
+    background-color: white;
+    border-radius: 25px;
+    color: black;
+    padding: 1.5em;
+}
+​
+#CTAContent h4 {
+    font-size: 1.15em;
+    font-weight: 400;
+    background-color: rgb(236, 236, 236);
+    border-radius: 15px;
+    padding: 20px;
+}
+​
+#initialCTAHeader {
+    margin: 0 3em 2em 0;
+}
+​
+#CTAContent p {
+    font-size: 1em;
+    font-weight: 300;
+    padding: 0 10% 0 10%;
+}
+​
+#CTAContent li {
+    font-size: 1em;
+    font-weight: 300;
+}
+​
+#CTAContent ul {
+    padding: 0 15% 0 15%;
+}
+​
+.CTAHeader {
+    margin: 2em 3em 2em 0;
+}

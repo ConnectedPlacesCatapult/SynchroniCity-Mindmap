@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import Topics from './pages/Topics/Topics';
 import Standards from './pages/Standards/Standards';
 import About from './pages/About/About';
+import CTA from './pages/CTA/CTA';
 import Footer from './components/Footer/Footer';
 import generateContent, { value, getId, standard, subtopic } from './functions/generateContent';
 import aesthetics from './functions/aesthetics';
@@ -38,6 +39,7 @@ function App() {
       <Navbar />
       <Topics />
       <Standards />
+      <CTA />
       <About />
       <Footer />
     </div>
