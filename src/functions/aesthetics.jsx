@@ -9,25 +9,40 @@ const aesthetics = {
 
             return new Promise((resolve, reject) => {
                 if (fadeIn === 'topicsSection') {
-                    console.log(1);
                     //ADD ALL OTHER SECTIONS TO THIS LIST
                     document.getElementById('resultsSection').style.opacity = 0;
+                    document.getElementById('aboutSection').style.opacity = 0;
                     document.getElementById('resultsSection').style.transitionDuration = duration / 2 + 's';
+                    document.getElementById('aboutSection').style.transitionDuration = duration / 2 + 's';
 
                     setTimeout(() => {
                         resolve(document.getElementById('resultsSection').style.display = 'none');
+                        resolve(document.getElementById('aboutSection').style.display = 'none');
                     }, duration * 500);
                 }
                 else if (fadeIn === 'resultsSection') {
-                    console.log(2);
                     //ADD ALL OTHER SECTIONS TO THIS LIST
                     document.getElementById('topicsSection').style.opacity = 0;
+                    document.getElementById('aboutSection').style.opacity = 0;
                     document.getElementById('topicsSection').style.transitionDuration = duration / 2 + 's';
+                    document.getElementById('aboutSection').style.transitionDuration = duration / 2 + 's';
 
                     setTimeout(() => {
                         resolve(document.getElementById('topicsSection').style.display = 'none');
+                        resolve(document.getElementById('aboutSection').style.display = 'none');
                     }, duration * 500);
-                } else {
+                } else if (fadeIn === 'aboutSection') {
+                    document.getElementById('topicsSection').style.opacity = 0;
+                    document.getElementById('aboutSection').style.opacity = 0;
+                    document.getElementById('topicsSection').style.transitionDuration = duration / 2 + 's';
+                    document.getElementById('aboutSection').style.transitionDuration = duration / 2 + 's';
+
+                    setTimeout(() => {
+                        resolve(document.getElementById('topicsSection').style.display = 'none');
+                        resolve(document.getElementById('resultsSection').style.display = 'none');
+                    }, duration * 500);
+                }
+                else {
                     console.log(fadeIn);
                 }
 

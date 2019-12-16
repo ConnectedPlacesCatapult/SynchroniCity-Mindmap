@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import Navbar from './components/Navbar/Navbar';
+import Navbar from './components/Navbar/Navbar.jsx';
 import Header from './components/Header/Header';
 import Topics from './pages/Topics/Topics';
 import Standards from './pages/Standards/Standards';
+import About from './pages/About/About';
+import Footer from './components/Footer/Footer';
 import generateContent, { value, getId, standard, subtopic } from './functions/generateContent';
 import aesthetics from './functions/aesthetics';
 import { importSheet, getTag0, getTags, rows, tag0Unique, tagAllUnique, filteredStandards, filteredSubStandards, getFilteredSubStandards } from './api/spreadsheet';
@@ -36,6 +38,8 @@ function App() {
       <Navbar />
       <Topics />
       <Standards />
+      <About />
+      <Footer />
     </div>
   );
 }

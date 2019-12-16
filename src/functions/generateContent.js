@@ -8,19 +8,20 @@ export let subIdArray = [];
 export let value;
 export let valueArray = [];
 export let standard;
+export let topic;
 export let subtopic;
 let myElement;
 let title;
 
 
 const generateContent = {
-    tag0: (imgPath) => {
+    tag0: () => {
         return new Promise((resolve, reject) => {
             getId = (get) => { console.log(get) }
             for (let i = 0; i < tag0Unique.length; i++) {
                 idArray.push(tag0Unique[i]);
 
-                myElement = document.getElementById('tag0Container').innerHTML + '<div class="topicDiv"><img class="folder" src="/static/media/folder_red.90acdd63.png" alt="Topic Icon"/><p class="topic">' + tag0Unique[i] + '<p></div>'
+                myElement = document.getElementById('tag0Container').innerHTML + '<div class="topicDiv" value="' + ( i + 1 ) + '"><img class="folder" src="/static/media/folder_red.90acdd63.png" alt="Topic Icon"/><p class="topic">' + tag0Unique[i] + '<p></div>'
                 document.getElementById('tag0Container').innerHTML = myElement;
             }
             resolve('resolved');
@@ -63,7 +64,7 @@ const generateContent = {
         return new Promise((resolve, reject) => {
             for (let i = 0; i < idArray.length; i++) {
                 document.querySelector('.topicDiv:nth-child(' + (i + 1) + ')').id = idArray[i];
-                document.querySelector('.topicDiv:nth-child(' + (i + 1) + ')').onclick = () => { subtopic = idArray[i]; getTags(rows, subtopic); generateContent.standards(); generateContent.crossRef(); generateContent.subtopics(); generateContent.assignSubtopicId(); generateContent.assignStandardId(); navigate.subtopic(); };
+                document.querySelector('.topicDiv:nth-child(' + (i + 1) + ')').onclick = () => { subtopic = idArray[i]; getTags(rows, subtopic); generateContent.standards(); generateContent.crossRef(); generateContent.subtopics(); generateContent.assignSubtopicId(); generateContent.assignStandardId(); navigate.subtopic(); topic = tag0Unique[i]; document.getElementById('chosenTopic').innerHTML = topic; };
             }
 
             resolve('resolved');

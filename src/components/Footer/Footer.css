@@ -1,0 +1,44 @@
+#footer {
+    height: 333px;
+    background-color: black;
+    padding-top: 3em;
+}
+
+#footer h3 {
+    font-size: 1.25em;
+    font-variant: small-caps;
+    color: grey;
+}
+
+#footer p {
+    font-size: 0.75em;
+    font-weight: 500;
+}
+
+.footerMiddleCol {
+    padding-left: 10% !important;
+}
+
+#footer input {
+    width: 100%;
+}
+
+#footerButton {
+    text-align: center;
+    background-color: darkblue;
+    color: white;
+    font-variant: small-caps;
+    margin-top: 3em;
+    width: 50%;
+    border-style: none;
+    height: 2em;
+}
+
+.footerPlaceholderImage {
+    width: 33%;
+    height: 5em;
+}
+
+#contain {
+    width: 75%;
+}

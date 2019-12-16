@@ -7,7 +7,7 @@ export const navigate = {
         document.getElementById('navTopic').classList.remove('active');
         document.getElementById('navSubtopic').classList.remove('active');
 
-        // aesthetics.fade('aboutSection', 1);
+        aesthetics.fade('aboutSection', 1);
     },
     gi: () => {
         document.getElementById('navGI').classList.add('active');
