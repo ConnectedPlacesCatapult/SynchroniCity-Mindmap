@@ -12,7 +12,6 @@ const About = () => (
             </div>
             <div id="aboutContent" className="col-lg-7 col-md-7 col-sm-10 offset-lg-0 offset-md-0 offset-sm-1">
                 <h4 id="initialHeader">The Synchronicity standards catalogue is a prototype tool which aims to help match cities and technology service providers with standards.</h4>
-<<<<<<< HEAD
                 <p>It does this by bringing together standards for Smart Cities from many organisations into one place to make it easier to identify what standards to use, to create a more discoverable, open and collaborative standards marketplace.</p>
                 <br />
                 <p>For Synchronicity, this helps you discover the standards that enable minimum interoperability (Minimum Interoperability Mechanisms), but also helps discover other standards that help with you with your journey ultimately enabling smart, sustainable cities and communities.  This includes for example:</p>
@@ -38,11 +37,6 @@ const About = () => (
                 <p>User research conducted by Connected Places Catapult and OASC identified that cities have a challenge with navigating the complex standards landscape, with X% of cities surveyed not knowing what standards to use.  Standards Development Organisations also have a challenge in coordinating work, often developing conflicting standards e.g. there are multiple IoT reference architectures.  This challenge has led to the development of a new <strong>joint task force between ITU, ISO and IEC</strong>, the three main international standards bodies in order to better coordinate standards.</p>
                 <p>The vision for the  online standards navigation tool is to help bring together the multiple standards available for smart cities and present this in an easy to navigate way for cities and technology service providers, so they can find what standards are relevant to what they are working on and see who else is using them, to help decide which standards to use.  For standards bodies, the vision is that this is a tool to enable collaboration by better coordination of standards development, helping to see where there are gaps as well as a tool to help the uptake of standards.</p>
                 <br />
-=======
-                <p>It does this by bringing together standards for Smart Cities from many organisations into one place to make it easier to identify what standards to use, to create a more discoverable, open and collaborative standards marketplace.
-                For Synchronicity, this helps you discover the standards that enable minimum interoperability (Minimum Interoperability Mechanisms), but also helps discover other standards that help with you with your journey ultimately enabling smart, sustainable cities and communities.  This includes for example:
-                </p>
->>>>>>> 4d4d28c081358f9829a9a69a532b3119f6d239dc
             </div>
         </div>
     </div>
