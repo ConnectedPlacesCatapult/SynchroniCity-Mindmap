@@ -21,7 +21,7 @@ const generateContent = {
             for (let i = 0; i < tag0Unique.length; i++) {
                 idArray.push(tag0Unique[i]);
 
-                myElement = document.getElementById('tag0Container').innerHTML + '<div class="topicDiv" value="' + ( i + 1 ) + '"><img class="folder" src="/static/media/folder_red.90acdd63.png" alt="Topic Icon"/><p class="topic">' + tag0Unique[i] + '<p></div>'
+                myElement = document.getElementById('tag0Container').innerHTML + '<div class="topicDiv" value="' + ( i + 1 ) + '"><img class="topicBG" src="' + process.env.PUBLIC_URL + '/Icon_Topics/png/Icon_Topic_' + ( i + 1 ) + '.png" /><p class="topic">' + tag0Unique[i] + '</p></div>'
                 document.getElementById('tag0Container').innerHTML = myElement;
             }
             resolve('resolved');

@@ -1,7 +1,7 @@
 #navbar {
     margin: 0 auto;
     padding: 0;
-    height: 7.55em;
+    height: 10em;
     width: 100%;
     background-color: white;
     z-index: 100;
@@ -29,7 +29,7 @@
     padding: 3px 1em 3px 1em;
     background-color: rgb(240,240, 240);
     border-radius: 20px;
-    font-size: 14px;
+    font-size: 16px;
     transition-duration: 0.25s;
 }
 
@@ -51,7 +51,7 @@
 }
 
 .navbarLogo {
-    height: 1.25em;
+    height: 1.5em;
     position: absolute;
     left: 3%;
 }

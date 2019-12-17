@@ -1,3 +1,16 @@
+#aboutSection {
+    display: none;
+}
+
+#aboutSectionDescription {
+    background-color: white;
+    height: fit-content;
+    padding: 1em 1em 7.5em 1em;
+    margin-right: 1em;
+    color: black;
+    border-radius: 15px;
+}
+
 .aboutRow {
     margin-top: 5em;
     margin-bottom: 3em;
@@ -7,24 +20,36 @@
     background-color: white;
     border-radius: 25px;
     color: black;
-    text-align: center;
     padding: 1.5em;
 }
 
 #aboutContent h4 {
-    font-size: 1.25em;
-    font-weight: 00;
+    font-size: 1.15em;
+    font-weight: 400;
     background-color: rgb(236, 236, 236);
     border-radius: 15px;
     padding: 20px;
 }
 
 #initialHeader {
-    margin-right: 3em;
+    margin: 0 3em 2em 0;
 }
 
 #aboutContent p {
     font-size: 1em;
     font-weight: 300;
     padding: 0 10% 0 10%;
+}
+
+#aboutContent li {
+    font-size: 1em;
+    font-weight: 300;
+}
+
+#aboutContent ul {
+    padding: 0 15% 0 15%;
+}
+
+.aboutHeader {
+    margin: 2em 3em 2em 0;
 }

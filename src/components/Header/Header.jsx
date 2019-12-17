@@ -8,7 +8,7 @@ const Header = () => (
             <li className="headerLink">home</li>
             <li className="headerLink">cities</li>
             <li className="headerLink">about</li>
-            <li className="headerLink">eews</li>
+            <li className="headerLink">news</li>
             <li className="headerLink">events</li>
             <li className="headerLink">contact</li>
             <li className="headerLink">become a member</li>

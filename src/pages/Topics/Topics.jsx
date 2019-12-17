@@ -10,7 +10,7 @@ const Topics = () => {
             { /* ========== START OF TOPICS SECTION ========== */}
 
             <div id="topicsSection" className="row">
-                <div className="col-lg-2 col-md-4 col-sm-10 offset-lg-1 offset-md-1 offset-sm-1">
+                <div className="col-lg-2 col-md-2 col-sm-10 offset-lg-1 offset-md-1 offset-sm-1 topicDescriptionDiv">
                     <h2 className="topicsHeader">Select topic</h2>
                     <p id="topicsText">All standards are categorised into these topics. Please select one to continue</p>
                 </div>

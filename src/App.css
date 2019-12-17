@@ -6,11 +6,11 @@ html, body {
 
 .App {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  background: url('./images/bg.jpg') no-repeat scroll center top;
+  background: url('./images/bkgn_generic.jpg') no-repeat scroll center top;
   background-size: cover;
   background-position-x: 0;
   background-position-y: 0;
-  color: white;
+  color: black;
   overflow: hidden;
 }
 
@@ -29,7 +29,7 @@ p {
 }
 
 #topicsSection {
-  /* position: absolute; */
-  padding-top: 25vh;
-  height: 100vh;
+  padding-top: 5em;
+  /* height: 100vh; */
+  padding-bottom: 5em;
 }
