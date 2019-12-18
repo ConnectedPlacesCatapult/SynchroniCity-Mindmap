@@ -1,5 +1,6 @@
 import { tag0Unique, tagAllUnique, filteredSubStandards, rows, getTags, filteredStandards, getFilteredSubStandards } from '../api/spreadsheet';
 import { navigate } from '../components/Navbar/Navbar';
+import generate from '@babel/generator';
 export let getId;
 export let id;
 export let idArray = [];
@@ -22,7 +23,7 @@ const generateContent = {
             for (let i = 0; i < tag0Unique.length; i++) {
                 idArray.push(tag0Unique[i]);
 
-                myElement = document.getElementById('tag0Container').innerHTML + '<div class="topicDiv" value="' + ( i + 1 ) + '"><img class="topicBG" src="' + process.env.PUBLIC_URL + '/Icon_Topics/png/Icon_Topic_' + ( i + 1 ) + '.png" /><p class="topic">' + tag0Unique[i] + '</p></div>'
+                myElement = document.getElementById('tag0Container').innerHTML + '<div class="topicDiv" value="' + (i + 1) + '"><img class="topicBG" src="' + process.env.PUBLIC_URL + '/Icon_Topics/png/Icon_Topic_' + (i + 1) + '.png" /><p class="topic">' + tag0Unique[i] + '</p></div>'
                 document.getElementById('tag0Container').innerHTML = myElement;
             }
             resolve('resolved');
@@ -32,7 +33,7 @@ const generateContent = {
     subtopics: () => {
         return new Promise((resolve, reject) => {
             subIdArray = []
-            document.getElementById('topicList').innerHTML = '<li id="all">All</li>';
+            document.getElementById('topicList').innerHTML = '<li id="all" class="subtopic activeSubtopic">All</li>';
             for (let i = 0; i < tagAllUnique.length; i++) {
                 subIdArray.push(tagAllUnique[i]);
                 document.getElementById('topicList').innerHTML = document.getElementById('topicList').innerHTML + '<li id="' + subIdArray[i] + '" class="subtopic" value="' + i + '">' + tagAllUnique[i] + '</li>';
@@ -47,7 +48,7 @@ const generateContent = {
 
             for (let i = 0; i < filteredStandards.length; i++) {
                 title = filteredStandards[i].serial.replace(/[^\w\s]|\s/g, '').toLowerCase();
-                document.getElementById('results').innerHTML = document.getElementById('results').innerHTML + '<div id=' + title + ' class="result" value="' + i +'"><p class="standard-serial">' + filteredStandards[i].serial + '</p><div class="abstract-container"><p>' + filteredStandards[i].abstract + '</p></div></div>';
+                document.getElementById('results').innerHTML = document.getElementById('results').innerHTML + '<div id=' + title + ' class="result" value="' + i + '"><p class="standard-serial">' + filteredStandards[i].serial + '</p><div class="abstract-container"><p>' + filteredStandards[i].abstract + '</p></div></div>';
             }
         })
     },
@@ -74,14 +75,25 @@ const generateContent = {
 
     assignSubtopicId: () => {
         return new Promise((resolve, reject) => {
+            document.getElementById('all').onclick = () => {
+                generateContent.standards(); document.getElementById('all').classList.add('activeSubtopic');
+                for (let i = 0; i < subIdArray.length; i++) { document.getElementById(subIdArray[i]).classList.remove('activeSubtopic'); };
+                for (let i = 0; i < filteredStandards.length; i++) { document.getElementById(filteredStandards[i].serial.replace(/[^\w\s]|\s/g, '').toLowerCase()).onclick = () => { generateContent.createModal(i); } }
+            };
+
             for (let i = 0; i < subIdArray.length; i++) {
-                document.getElementById(subIdArray[i]).onclick = () => { subId = subIdArray[i]; getFilteredSubStandards(filteredStandards, subIdArray, subId); generateContent.standardsBySubtopic(); generateContent.assignStandardId(); }
+                document.getElementById(subIdArray[i]).onclick = () => {
+                    document.getElementById('all').classList.remove('activeSubtopic'); subId = subIdArray[i]; getFilteredSubStandards(filteredStandards, subIdArray, subId); generateContent.standardsBySubtopic(); generateContent.assignStandardId(); document.getElementById(subIdArray[i]).classList.add('activeSubtopic');
+                    // document.getElementsByClassName('subtopic').style.backgroundColor = "rgba(255, 255, 255, 0.15)"; document.getElementsByClassName('subtopic').style.color = "white";
+                    for (let l = 0; l < subIdArray.length; l++) { if (l === i) { } else { document.getElementById(subIdArray[l]).classList.remove('activeSubtopic'); } };
+                }
             }
         });
     },
 
     assignStandardId: () => {
-        return new Promise ((resolve, reject) => {
+        return new Promise((resolve, reject) => {
+            console.log(filteredStandards);
             for (let i = 0; i < filteredSubStandards.length; i++) {
                 document.getElementById(filteredSubStandards[i].serial.replace(/[^\w\s]|\s/g, '').toLowerCase()).onclick = () => { generateContent.createModal(i); }
             }
@@ -96,26 +108,44 @@ const generateContent = {
 
     createModal: (value) => {
         return new Promise((resolve, reject) => {
-            standard = filteredStandards[value];
-            console.log(standard);
+            if (document.getElementById('all').classList.contains('activeSubtopic')) {
 
-            document.getElementById('resultWrapper').style.display = 'flex';
-            setTimeout(() => { document.getElementById('standardsResult').style.opacity = '1'; }, 200);
+                standard = filteredStandards[value];
+                console.log(standard);
 
-            document.getElementById('standardName').innerHTML = standard.serial;
-            document.getElementById('subTitle').innerHTML = standard.title_full;
-            if (standard.abstract === "") {
-                document.getElementById('description').innerHTML = "<strong>Sorry, there is not a description available at the moment.</strong>"
+                document.getElementById('resultWrapper').style.display = 'flex';
+                setTimeout(() => { document.getElementById('standardsResult').style.opacity = '1'; }, 200);
+
+                document.getElementById('standardName').innerHTML = standard.serial;
+                document.getElementById('subTitle').innerHTML = standard.title_full;
+                if (standard.abstract === "") {
+                    document.getElementById('description').innerHTML = "<strong>Sorry, there is not a description available at the moment.</strong>"
+                } else {
+                    document.getElementById('description').innerHTML = standard.abstract;
+                }
+                document.getElementById('URL').setAttribute("href", standard.url);
             } else {
-            document.getElementById('description').innerHTML = standard.abstract;
+                standard = filteredSubStandards[value];
+                console.log(standard);
+
+                document.getElementById('resultWrapper').style.display = 'flex';
+                setTimeout(() => { document.getElementById('standardsResult').style.opacity = '1'; }, 200);
+
+                document.getElementById('standardName').innerHTML = standard.serial;
+                document.getElementById('subTitle').innerHTML = standard.title_full;
+                if (standard.abstract === "") {
+                    document.getElementById('description').innerHTML = "<strong>Sorry, there is not a description available at the moment.</strong>"
+                } else {
+                    document.getElementById('description').innerHTML = standard.abstract;
+                }
+                document.getElementById('URL').setAttribute("href", standard.url);
             }
-            document.getElementById('URL').setAttribute("href", standard.url);
         });
     },
 
     closeModal: () => {
         document.getElementById('standardsResult').style.opacity = '0';
-        setTimeout(() => {document.getElementById('resultWrapper').style.display = 'none'}, 1000);
+        setTimeout(() => { document.getElementById('resultWrapper').style.display = 'none' }, 1000);
     }
 }
 

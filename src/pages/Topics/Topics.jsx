@@ -54,6 +54,7 @@ const Topics = () => {
                     <div className="row">
                         <div className="col-lg-8 col-md-8 col-sm-10 offset-lg-2 offset-md-2 offset-sm-1 center">
                             <ul id="topicList">
+                                <div className="all"></div>
                             </ul>
                         </div>
                     </div>
