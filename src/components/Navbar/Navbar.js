@@ -15,7 +15,7 @@ export const navigate = {
         document.getElementById('navTopic').classList.remove('active');
         document.getElementById('navSubtopic').classList.remove('active');
 
-        // aesthetics.fade('giSection', 1);
+        aesthetics.fade('CTASection', 1);
     },
     topic: () => {
         document.getElementById('navTopic').classList.add('active');

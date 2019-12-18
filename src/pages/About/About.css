@@ -5,10 +5,12 @@
 #aboutSectionDescription {
     background-color: white;
     height: fit-content;
-    padding: 1em 1em 7.5em 1em;
+    padding: 1em 1em 6em 1em;
     margin-right: 1em;
     color: black;
     border-radius: 15px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 
 .aboutRow {
@@ -22,6 +24,8 @@
     color: black;
     text-align: left;
     padding: 1.5em;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
 }
 
 #aboutContent h4 {
@@ -53,4 +57,14 @@
 
 .aboutHeader {
     margin: 2em 3em 2em 0;
+}
+
+#AboutTopBox {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#AboutTopBoxContainer {
+    margin: 0;
 }
