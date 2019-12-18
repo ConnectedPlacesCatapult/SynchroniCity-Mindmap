@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fe9981c15bc951a062c0d1f98489cf75",
+    "revision": "0952b9089e17ef61899e65002247a08e",
     "url": "/SynchroniCity-Mindmap/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/SynchroniCity-Mindmap/static/css/2.17e5ed98.chunk.css"
   },
   {
-    "revision": "a30c433853bc4f5bf722",
-    "url": "/SynchroniCity-Mindmap/static/css/main.43f3de81.chunk.css"
+    "revision": "edced05839b13bcea383",
+    "url": "/SynchroniCity-Mindmap/static/css/main.6abce380.chunk.css"
   },
   {
     "revision": "be31b369e0e8088e471f",
     "url": "/SynchroniCity-Mindmap/static/js/2.545b9631.chunk.js"
   },
   {
-    "revision": "a30c433853bc4f5bf722",
-    "url": "/SynchroniCity-Mindmap/static/js/main.670c4a17.chunk.js"
+    "revision": "edced05839b13bcea383",
+    "url": "/SynchroniCity-Mindmap/static/js/main.52c69ab9.chunk.js"
   },
   {
     "revision": "ca981e2185e3144cc6a0",
