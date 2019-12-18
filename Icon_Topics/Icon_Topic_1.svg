@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="196px" height="216px" viewBox="0 0 196 216" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="216px" height="216px" viewBox="0 0 196 216" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
     <title>Icon_Topic_01</title>
     <desc>Created with Sketch.</desc>
@@ -19,7 +19,7 @@
                             <use id="Mask" fill="#E4F8FF" xlink:href="#path-1"></use>
                             <g id="Colours/Orange" mask="url(#mask-2)" fill="#FB9E61">
                                 <g transform="translate(87.119996, 97.919996) scale(-1, -1) translate(-87.119996, -97.919996) translate(-20.879999, -20.159999)" id="Rectangle">
-                                    <rect x="0" y="0" width="216.146431" height="236.15999"></rect>
+                                    <rect x="0" y="0" width="236.146431" height="216.15999"></rect>
                                 </g>
                             </g>
                         </g>
