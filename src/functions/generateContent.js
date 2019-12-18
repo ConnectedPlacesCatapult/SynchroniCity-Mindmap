@@ -10,6 +10,7 @@ export let valueArray = [];
 export let standard;
 export let topic;
 export let subtopic;
+export let element;
 let myElement;
 let title;
 
@@ -64,7 +65,7 @@ const generateContent = {
         return new Promise((resolve, reject) => {
             for (let i = 0; i < idArray.length; i++) {
                 document.querySelector('.topicDiv:nth-child(' + (i + 1) + ')').id = idArray[i];
-                document.querySelector('.topicDiv:nth-child(' + (i + 1) + ')').onclick = () => { subtopic = idArray[i]; getTags(rows, subtopic); generateContent.standards(); generateContent.crossRef(); generateContent.subtopics(); generateContent.assignSubtopicId(); generateContent.assignStandardId(); navigate.subtopic(); topic = tag0Unique[i]; document.getElementById('chosenTopic').innerHTML = topic; };
+                document.querySelector('.topicDiv:nth-child(' + (i + 1) + ')').onclick = () => { subtopic = idArray[i]; getTags(rows, subtopic); generateContent.standards(); generateContent.crossRef(); generateContent.subtopics(); generateContent.assignSubtopicId(); generateContent.assignStandardId(); navigate.subtopic(); topic = tag0Unique[i]; document.getElementById('chosenTopic').innerHTML = topic; element = document.getElementById(idArray[i]).innerHTML; console.log(element); document.getElementById('putElement').innerHTML = element; };
             }
 
             resolve('resolved');
@@ -103,7 +104,11 @@ const generateContent = {
 
             document.getElementById('standardName').innerHTML = standard.serial;
             document.getElementById('subTitle').innerHTML = standard.title_full;
+            if (standard.abstract === "") {
+                document.getElementById('description').innerHTML = "<strong>Sorry, there is not a description available at the moment.</strong>"
+            } else {
             document.getElementById('description').innerHTML = standard.abstract;
+            }
             document.getElementById('URL').setAttribute("href", standard.url);
         });
     },

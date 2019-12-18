@@ -63,7 +63,7 @@ const aesthetics = {
                     setTimeout(() => {
                         resolve(document.getElementById('topicsSection').style.display = 'none');
                         resolve(document.getElementById('resultsSection').style.display = 'none');
-                        resolve(document.getElementById('CTASection').style.display = 'none');
+                        resolve(document.getElementById('aboutSection').style.display = 'none');
                     }, duration * 500);
                 } 
                 else {
