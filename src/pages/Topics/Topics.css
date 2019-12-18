@@ -23,6 +23,25 @@
     z-index: -1;
 }
 
+#resultsSection .topicBG {
+    width: 12em;
+    margin: 0;
+    padding: 0;
+    display: auto;
+    text-align: center;
+}
+
+#resultsSection .topic {
+    position: auto;
+    margin: 0 auto;
+    position: relative !important;
+    font-size: 1.25em;
+}
+
+#putElement {
+    text-align: center;
+}
+
 .topicIcon {
     width: 85%;
 }

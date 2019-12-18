@@ -17,14 +17,16 @@
 
 .standardsContentContainer {
     width: 100%;
+    height: 500px !important;
     background-color: white;
     position: absolute;
-    top: 40%;
+    top: 380px;
     z-index: 2;
     transform: translateY(-50%);
     height: fit-content;
     /* background-image: url('../../images/Card_Result_Active.svg'); */
-    border-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     padding: 0 !important;
     color: black;
     transition-duration: 1s;
@@ -39,46 +41,133 @@
 }
  
 #standardName {
-    font-size: 1.2em;
-    font-weight: 250;
+    font-size: 1em;
+    font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 30px 0 10px 25px ;
+    text-align: left;
+    padding: 5% 5% 1% 5%;
 } 
 
 #subTitle {
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 250;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0 0 50px 25px;
+    text-align: left;
+    padding: 0 5% 5% 5%;
+    height: 120px;
+    overflow: auto;
 } 
 
 #description {
     font-size: 1em;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0 0 30px 0;
-    text-align: center;
+    padding: 0 7em 0 7em;
+    text-align: left;
+    height: 170px;
+    overflow: auto;
 }
 
 #URLDiv {
     text-align: center;
     margin-bottom: 50px;
+    background-color: black;
+    margin: 0 15% 0 15%;
+    border-radius: 8px;
+    height: 2em;
+    transition-duration: 0.5s;
+}
+
+#URLDiv:hover {
+    background-color: grey;
+    transition-duration: 0.5s;
+    cursor: pointer;
 }
 
 #URL {
+    width: 100%;
+    margin-top: 33%;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    font-variant: small-caps;
 }
 
+#resultTop {
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    z-index: -1;
+    top: -60px;
+    /* display: none; */
+}
+
+@media only screen and (max-width: 1070px) {
+    #resultTop {
+        height: 75px;
+    }
+}
+@media only screen and (max-width: 960px) {
+    #resultTop {
+        height: 80px;
+    }
+}
+@media only screen and (max-width: 850px) {
+    #resultTop {
+        height: 90px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #resultTop {
+        height: 84px;
+    }
+}
+@media only screen and (max-width: 740px) {
+    #resultTop {
+        height: 70px;
+    }
+}
+@media only screen and (max-width: 640px) {
+    #resultTop {
+        height: 80px;
+    }
+}
+@media only screen and (max-width: 576px) {
+    #resultTop {
+        height: 70px;
+    }
+}
+@media only screen and (max-width: 530px) {
+    #resultTop {
+        height: 80px;
+    }
+}
+@media only screen and (max-width: 420px) {
+    #resultTop {
+        height: 90px;
+    }
+}
+
+
+
 #closeStandard {
-    width: 4em;
-    height: 4em;
-    /* position: absolute;
-    right: 0%; */
-    float: right;
+    width: 2.5em;
+    height: 2.75em;
+    position: absolute;
+    right: 2%;
+    top: -50px;
+    opacity: 0;
     margin: 0;
     background-color: purple;
 }
 
 #closeStandard:hover {
     cursor: pointer;
+}
+
+#titleAndSubtitle {
+    background-color: rgb(231, 231, 231);
+    margin: 5% 5em 4% 5em;
+    border-radius: 15px;
 }
 
 @media only screen and (max-width: 768px) {
