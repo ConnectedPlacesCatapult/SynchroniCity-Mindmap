@@ -12,6 +12,7 @@ export let standard;
 export let topic;
 export let subtopic;
 export let element;
+let results;
 let myElement;
 let title;
 
@@ -66,7 +67,19 @@ const generateContent = {
         return new Promise((resolve, reject) => {
             for (let i = 0; i < idArray.length; i++) {
                 document.querySelector('.topicDiv:nth-child(' + (i + 1) + ')').id = idArray[i];
-                document.querySelector('.topicDiv:nth-child(' + (i + 1) + ')').onclick = () => { subtopic = idArray[i]; getTags(rows, subtopic); generateContent.standards(); generateContent.crossRef(); generateContent.subtopics(); generateContent.assignSubtopicId(); generateContent.assignStandardId(); navigate.subtopic(); topic = tag0Unique[i]; document.getElementById('chosenTopic').innerHTML = topic; element = document.getElementById(idArray[i]).innerHTML; console.log(element); document.getElementById('putElement').innerHTML = element; };
+                document.querySelector('.topicDiv:nth-child(' + (i + 1) + ')').onclick = () => { subtopic = idArray[i]; 
+                    getTags(rows, subtopic); 
+                    generateContent.standards(); 
+                    generateContent.crossRef(); 
+                    generateContent.subtopics(); 
+                    generateContent.assignSubtopicId(); 
+                    generateContent.assignAllStandardId(); 
+                    navigate.subtopic(); 
+                    document.getElementById('navSubtopic').style.display = 'inline-block';
+                    document.getElementById('seperator').style.display = 'inline-block';
+                    topic = tag0Unique[i]; 
+                element = document.getElementById(idArray[i]).innerHTML; console.log(element); 
+                document.getElementById('putElement').innerHTML = element; };
             }
 
             resolve('resolved');
@@ -78,25 +91,38 @@ const generateContent = {
             document.getElementById('all').onclick = () => {
                 generateContent.standards(); document.getElementById('all').classList.add('activeSubtopic');
                 for (let i = 0; i < subIdArray.length; i++) { document.getElementById(subIdArray[i]).classList.remove('activeSubtopic'); };
-                for (let i = 0; i < filteredStandards.length; i++) { document.getElementById(filteredStandards[i].serial.replace(/[^\w\s]|\s/g, '').toLowerCase()).onclick = () => { generateContent.createModal(i); } }
+                for (let i = 0; i < filteredStandards.length; i++) { document.getElementById(filteredStandards[i].serial.replace(/[^\w\s]|\s/g, '').toLowerCase()).onclick = () => { generateContent.createModal(i); } };
+                results = document.getElementById('results');
+                results.scrollIntoView();
             };
 
             for (let i = 0; i < subIdArray.length; i++) {
                 document.getElementById(subIdArray[i]).onclick = () => {
                     document.getElementById('all').classList.remove('activeSubtopic'); subId = subIdArray[i]; getFilteredSubStandards(filteredStandards, subIdArray, subId); generateContent.standardsBySubtopic(); generateContent.assignStandardId(); document.getElementById(subIdArray[i]).classList.add('activeSubtopic');
-                    // document.getElementsByClassName('subtopic').style.backgroundColor = "rgba(255, 255, 255, 0.15)"; document.getElementsByClassName('subtopic').style.color = "white";
                     for (let l = 0; l < subIdArray.length; l++) { if (l === i) { } else { document.getElementById(subIdArray[l]).classList.remove('activeSubtopic'); } };
+                    results = document.getElementById('results');
+                    results.scrollIntoView();
                 }
+            }
+        });
+    },
+
+    assignAllStandardId: () => {
+        return new Promise ((resolve, reject) => {
+            for (let i = 0; i < filteredStandards.length; i++) {
+                document.getElementById(filteredStandards[i].serial.replace(/[^\w\s]|\s/g, '').toLowerCase()).onclick = () => { generateContent.createModal(i); }
             }
         });
     },
 
     assignStandardId: () => {
         return new Promise((resolve, reject) => {
-            console.log(filteredStandards);
+            console.log(filteredSubStandards);
             for (let i = 0; i < filteredSubStandards.length; i++) {
+                console.log(filteredSubStandards[i]);
                 document.getElementById(filteredSubStandards[i].serial.replace(/[^\w\s]|\s/g, '').toLowerCase()).onclick = () => { generateContent.createModal(i); }
             }
+            console.log(filteredSubStandards);
         });
     },
 

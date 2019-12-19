@@ -33,6 +33,18 @@
     transition-duration: 0.25s;
 }
 
+#navbar #navSubtopic {
+    font-size: 13px;
+    display: none;
+}
+
+#navbar #seperator {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0,0,0,0);
+    display: none;
+}
+
 #navbar ul li:hover {
     background-color: rgb(202, 88, 88);
     cursor: pointer;
