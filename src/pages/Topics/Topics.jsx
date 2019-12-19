@@ -15,7 +15,7 @@ const Topics = () => {
                     <p id="topicsText">All standards are categorised into these topics. Please select one to continue</p>
                 </div>
 
-                <div id="tag0Container" className="col-lg-8 col-md-6 col-sm-10">
+                <div id="tag0Container" className="col-lg-8 col-md-8 col-sm-10">
                 </div>
             </div>
 
@@ -67,7 +67,7 @@ const Topics = () => {
                     </div>
 
                     <div className="col-lg-8 col-md-8 col-sm-12">
-                        <div id="results" className="center"></div>
+                        <div id="results"></div>
                     </div>
 
                 </div>
