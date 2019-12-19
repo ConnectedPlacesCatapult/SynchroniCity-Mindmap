@@ -13,9 +13,15 @@ const Topics = () => {
                 <div className="col-lg-2 col-md-2 col-sm-10 offset-lg-1 offset-md-1 offset-sm-1 topicDescriptionDiv">
                     <h2 className="topicsHeader">Select topic</h2>
                     <p id="topicsText">All standards are categorised into these topics. Please select one to continue</p>
+                    <img id="DescriptionBottomBox" src={require('../../images/Description_Box_Bottom.svg')}/> 
                 </div>
 
+<<<<<<< HEAD
+
+                <div id="tag0Container" className="col-lg-8 col-md-6 col-sm-10">
+=======
                 <div id="tag0Container" className="col-lg-8 col-md-8 col-sm-10">
+>>>>>>> d685cf28c4004bca171f6fcc8d9dec01ebb0f4c5
                 </div>
             </div>
 

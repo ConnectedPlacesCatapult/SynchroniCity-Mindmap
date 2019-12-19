@@ -9,10 +9,12 @@
 
 #CTAContent {
     background-color: white;
-    border-radius: 25px;
+    border-radius: 15px;
     color: black;
     text-align: left;
-    padding: 1.5em;
+    padding: 1em 3em;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
 }
 
 #CTAContent h4 {
@@ -27,8 +29,35 @@
     margin-right: 3em;
 }
 
+#CTASectionDescription {
+    background-color: white;
+    height: fit-content;
+    padding: 1em 1em 6em 1em;
+    margin-right: 1em;
+    margin-top: 0em;
+    border-radius: 15px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
 #CTAContent p {
     font-size: 1em;
     font-weight: 300;
     padding: 0 10% 0 10%;
+}
+
+#DescriptionBottomBox {
+    width: 100%;    
+    padding: 0em 1em 7em 0em;
+}
+
+#GetInvolvedTopBox {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+#GetInvolvedTopBoxContainer {
+    margin: 0;
 }
