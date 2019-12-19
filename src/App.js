@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Spinner from './components/Spinner/spinner';
 import Navbar from './components/Navbar/Navbar.jsx';
 import Header from './components/Header/Header';
 import Topics from './pages/Topics/Topics';
@@ -15,19 +16,13 @@ import './App.css';
 
 function App() {
   useEffect(() => {
-    // tag0 = click button
-    var tag0 = 'MIMs';
+
     getTag0().then(() => { getTags(rows, subtopic) })
       .then(() => { generateContent.tag0(); })
       .then(() => { generateContent.assignTopicId(); })
       .then(() => { console.log(tagAllUnique); });
 
   });
-  // tag0 = click button topic
-  var tag0Select = 'MIMs'
-  // subtag = click button subtopic
-  var subTagSelect = 'API'
-  // getTag0().then(() => {getTags(rows, subtopic)}).then(() => {getFilteredSubStandards(filteredStandards, subTagSelect)}).then(() => console.log(filteredSubStandards));
   // tag0Unique stores all topics
   // tagAllUnique stores all subtopics based on a topic
   // filteredStandards stores all standards based on a topic

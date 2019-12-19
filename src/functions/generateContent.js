@@ -92,7 +92,7 @@ const generateContent = {
                 generateContent.standards(); document.getElementById('all').classList.add('activeSubtopic');
                 for (let i = 0; i < subIdArray.length; i++) { document.getElementById(subIdArray[i]).classList.remove('activeSubtopic'); };
                 for (let i = 0; i < filteredStandards.length; i++) { document.getElementById(filteredStandards[i].serial.replace(/[^\w\s]|\s/g, '').toLowerCase()).onclick = () => { generateContent.createModal(i); } };
-                results = document.getElementById('results');
+                results = document.getElementById('resultsRow');
                 results.scrollIntoView();
             };
 
