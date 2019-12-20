@@ -96,11 +96,15 @@
 }
 /* iPad */
 @media only screen and (max-width: 800px) {
-    #AboutSectionBox {
-        margin-bottom: 0em !important;
+    .aboutRow {
+        margin-top: 2em;
+        margin-bottom: 3em;
     }
     #DescriptionBottomBox {
-        visibility: hidden !important;
+        display: none !important;    
+    }
+    #AboutTopBoxContainer {
+        margin-top: 1em !important;
     }
 }
 
