@@ -67,7 +67,7 @@
     #CTASectionDescription {
         margin-left: 0em !important;
         margin-bottom: 1em !important;
-
+        height: 25vh !important;
     }
     #GetInvolvedTopBoxContainer {
         margin-top: 1em !important;
@@ -77,16 +77,22 @@
     #DescriptionBottomBox {
         display: none !important;    
     }
-    .CTARow {
+    .TopicSection {
         margin-top: 2em;
         margin-bottom: 3em;
     }
 }
 /* iPad */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 767px) {
     .CTARow {
         margin-top: 2em;
         margin-bottom: 3em;
+    }
+    #CTASectionDescription {
+        margin-left: 0em !important;
+        margin-bottom: 1em !important;
+        height: 25vh !important;
+
     }
     #DescriptionBottomBox {
         display: none !important;    
@@ -111,7 +117,7 @@
     }
     #GetInvolvedTopBoxContainer {
         margin-right: 1em !important;
-        margin-left: 3.5em !important;
+        margin-left: 1em !important;
     }
     #DescriptionBottomBox {
         visibility: hidden !important;

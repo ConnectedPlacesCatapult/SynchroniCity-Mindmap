@@ -4,7 +4,7 @@ import './CTA.css';
 const CTA = () => (
     <div id="CTASection">
         <div className="row CTARow">
-            <div className="col-lg-3 col-md-3 col-sm-10 offset-lg-1 offset-md-1 offset-sm-1">
+            <div id="CTASectionBox" className="col-lg-3 col-md-3 col-sm-10 offset-lg-1 offset-md-1 offset-sm-1">
                 <div id="CTASectionDescription">
                     <h2>Get involved</h2>
                     <p>Work with us to help the adoption of standards for smart and sustainable cities and communities.</p>
