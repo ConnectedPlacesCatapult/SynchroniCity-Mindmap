@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "88e2bfaacc2a141789f6624373ba3db0",
+    "revision": "042260efd438fabb656118484317837a",
     "url": "/SynchroniCity-Mindmap/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/SynchroniCity-Mindmap/static/css/2.17e5ed98.chunk.css"
   },
   {
-    "revision": "da0b13bef82ecd59fadb",
-    "url": "/SynchroniCity-Mindmap/static/css/main.8a2ecb4a.chunk.css"
+    "revision": "3a6e946d8ed1e2f3a67f",
+    "url": "/SynchroniCity-Mindmap/static/css/main.3fb5d2eb.chunk.css"
   },
   {
     "revision": "5f4d4f9cea7652a92741",
     "url": "/SynchroniCity-Mindmap/static/js/2.95505e67.chunk.js"
   },
   {
-    "revision": "da0b13bef82ecd59fadb",
-    "url": "/SynchroniCity-Mindmap/static/js/main.69d3e9d2.chunk.js"
+    "revision": "3a6e946d8ed1e2f3a67f",
+    "url": "/SynchroniCity-Mindmap/static/js/main.f13486a3.chunk.js"
   },
   {
     "revision": "ca981e2185e3144cc6a0",
@@ -40,12 +40,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/SynchroniCity-Mindmap/static/media/Description_Box_Bottom.5bbc337d.svg"
   },
   {
-    "revision": "44bf906f7ed7a43984528ed754806b49",
-    "url": "/SynchroniCity-Mindmap/static/media/Top_Box_About.44bf906f.svg"
+    "revision": "c77e8acb8d6a909426648a3446140af8",
+    "url": "/SynchroniCity-Mindmap/static/media/Top_Box_About.c77e8acb.png"
   },
   {
-    "revision": "3aa8da4c07c4d1f689c27c3eecc85598",
-    "url": "/SynchroniCity-Mindmap/static/media/Top_Box_GetInvolved.3aa8da4c.svg"
+    "revision": "a82913c724d7994037b713f6bfa9c027",
+    "url": "/SynchroniCity-Mindmap/static/media/Top_Box_GetInvolved.a82913c7.png"
   },
   {
     "revision": "7c201e7b31f2ef576f31d48b33bf5061",
@@ -60,11 +60,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/SynchroniCity-Mindmap/static/media/bkgn_generic_top.e87f9bba.png"
   },
   {
-    "revision": "445f2174d9b978e9cb0e91bf192bb937",
-    "url": "/SynchroniCity-Mindmap/static/media/search.445f2174.png"
+    "revision": "4feffd865371b36769df8d3d477317c1",
+    "url": "/SynchroniCity-Mindmap/static/media/logo_animated3.4feffd86.gif"
   },
   {
-    "revision": "7beeff5c1082d5ec13fda087e967e1a5",
-    "url": "/SynchroniCity-Mindmap/static/media/synchronicity_logo_black.7beeff5c.svg"
+    "revision": "445f2174d9b978e9cb0e91bf192bb937",
+    "url": "/SynchroniCity-Mindmap/static/media/search.445f2174.png"
   }
 ]);
