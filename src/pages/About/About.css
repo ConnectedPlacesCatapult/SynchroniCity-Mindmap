@@ -105,6 +105,8 @@
     }
     #AboutTopBoxContainer {
         margin-top: 1em !important;
+        margin-left: 1em !important;
+        padding: 0em !important;
     }
 }
 

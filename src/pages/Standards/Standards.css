@@ -145,6 +145,9 @@
     #resultTop {
         height: 90px;
     }
+    #topicsHeader {
+        margin-left: 1em !important;
+    }
 }
 
 
