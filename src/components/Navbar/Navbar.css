@@ -70,7 +70,7 @@
 
 @media only screen and (max-width: 920px) {
     #navbar ul li {
-        margin-top: 6em;
+        margin-top: 7em;
     }
 
     #navbar ul {
@@ -84,6 +84,6 @@
     #navbar ul li {
         font-size: 12px;
         margin: 0 0.5em 0 0.5em;
-        margin-top: 6em;
+        margin-top: 8.5em;
     }
 }
