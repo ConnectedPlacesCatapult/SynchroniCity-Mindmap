@@ -49,7 +49,11 @@ const generateContent = {
 
             for (let i = 0; i < filteredStandards.length; i++) {
                 title = filteredStandards[i].serial.replace(/[^\w\s]|\s/g, '').toLowerCase();
-                document.getElementById('results').innerHTML = document.getElementById('results').innerHTML + '<div id=' + title + ' class="result" value="' + i + '"><p class="standard-serial">' + filteredStandards[i].serial + '</p><div class="abstract-container"><p>' + filteredStandards[i].abstract + '</p></div></div>';
+                if (filteredStandards[i].abstract === "") {
+                    document.getElementById('results').innerHTML = document.getElementById('results').innerHTML + '<div id=' + title + ' class="result" value="' + i + '"><p class="standard-serial">' + filteredStandards[i].serial + '</p><div class="abstract-container"><p><strong><i>Sorry there is no description available at the moment.</i></strong></p></div></div>';
+                } else {
+                    document.getElementById('results').innerHTML = document.getElementById('results').innerHTML + '<div id=' + title + ' class="result" value="' + i + '"><p class="standard-serial">' + filteredStandards[i].serial + '</p><div class="abstract-container"><p>' + filteredStandards[i].abstract + '</p></div></div>';
+                }
             }
         })
     },
@@ -67,19 +71,21 @@ const generateContent = {
         return new Promise((resolve, reject) => {
             for (let i = 0; i < idArray.length; i++) {
                 document.querySelector('.topicDiv:nth-child(' + (i + 1) + ')').id = idArray[i];
-                document.querySelector('.topicDiv:nth-child(' + (i + 1) + ')').onclick = () => { subtopic = idArray[i]; 
-                    getTags(rows, subtopic); 
-                    generateContent.standards(); 
-                    generateContent.crossRef(); 
-                    generateContent.subtopics(); 
-                    generateContent.assignSubtopicId(); 
-                    generateContent.assignAllStandardId(); 
-                    navigate.subtopic(); 
+                document.querySelector('.topicDiv:nth-child(' + (i + 1) + ')').onclick = () => {
+                    subtopic = idArray[i];
+                    getTags(rows, subtopic);
+                    generateContent.standards();
+                    generateContent.crossRef();
+                    generateContent.subtopics();
+                    generateContent.assignSubtopicId();
+                    generateContent.assignAllStandardId();
+                    navigate.subtopic();
                     document.getElementById('navSubtopic').style.display = 'inline-block';
                     document.getElementById('seperator').style.display = 'inline-block';
-                    topic = tag0Unique[i]; 
-                element = document.getElementById(idArray[i]).innerHTML; console.log(element); 
-                document.getElementById('putElement').innerHTML = element; };
+                    topic = tag0Unique[i];
+                    element = document.getElementById(idArray[i]).innerHTML; console.log(element);
+                    document.getElementById('putElement').innerHTML = element;
+                };
             }
 
             resolve('resolved');
@@ -108,7 +114,7 @@ const generateContent = {
     },
 
     assignAllStandardId: () => {
-        return new Promise ((resolve, reject) => {
+        return new Promise((resolve, reject) => {
             for (let i = 0; i < filteredStandards.length; i++) {
                 document.getElementById(filteredStandards[i].serial.replace(/[^\w\s]|\s/g, '').toLowerCase()).onclick = () => { generateContent.createModal(i); }
             }

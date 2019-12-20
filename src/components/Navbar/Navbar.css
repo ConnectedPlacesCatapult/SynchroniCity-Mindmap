@@ -67,3 +67,23 @@
     position: absolute;
     left: 3%;
 }
+
+@media only screen and (max-width: 920px) {
+    #navbar ul li {
+        margin-top: 6em;
+    }
+
+    #navbar ul {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #navbar ul li {
+        font-size: 12px;
+        margin: 0 0.5em 0 0.5em;
+        margin-top: 6em;
+    }
+}

@@ -16,12 +16,7 @@ const Topics = () => {
                     <img id="DescriptionBottomBox" src={require('../../images/Description_Box_Bottom.svg')}/> 
                 </div>
 
-<<<<<<< HEAD
-
-                <div id="tag0Container" className="col-lg-8 col-md-6 col-sm-10">
-=======
                 <div id="tag0Container" className="col-lg-8 col-md-8 col-sm-10">
->>>>>>> d685cf28c4004bca171f6fcc8d9dec01ebb0f4c5
                 </div>
             </div>
 
