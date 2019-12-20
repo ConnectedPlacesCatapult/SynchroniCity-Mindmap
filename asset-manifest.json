@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/SynchroniCity-Mindmap/static/css/main.3fb5d2eb.chunk.css",
-    "main.js": "/SynchroniCity-Mindmap/static/js/main.f13486a3.chunk.js",
-    "main.js.map": "/SynchroniCity-Mindmap/static/js/main.f13486a3.chunk.js.map",
-    "runtime-main.js": "/SynchroniCity-Mindmap/static/js/runtime-main.aed966f6.js",
-    "runtime-main.js.map": "/SynchroniCity-Mindmap/static/js/runtime-main.aed966f6.js.map",
+    "main.css": "/SynchroniCity-Mindmap/static/css/main.4cd38afc.chunk.css",
+    "main.js": "/SynchroniCity-Mindmap/static/js/main.339bf312.chunk.js",
+    "main.js.map": "/SynchroniCity-Mindmap/static/js/main.339bf312.chunk.js.map",
+    "runtime-main.js": "/SynchroniCity-Mindmap/static/js/runtime-main.1128123d.js",
+    "runtime-main.js.map": "/SynchroniCity-Mindmap/static/js/runtime-main.1128123d.js.map",
     "static/css/2.17e5ed98.chunk.css": "/SynchroniCity-Mindmap/static/css/2.17e5ed98.chunk.css",
-    "static/js/2.95505e67.chunk.js": "/SynchroniCity-Mindmap/static/js/2.95505e67.chunk.js",
-    "static/js/2.95505e67.chunk.js.map": "/SynchroniCity-Mindmap/static/js/2.95505e67.chunk.js.map",
+    "static/js/2.831a436c.chunk.js": "/SynchroniCity-Mindmap/static/js/2.831a436c.chunk.js",
+    "static/js/2.831a436c.chunk.js.map": "/SynchroniCity-Mindmap/static/js/2.831a436c.chunk.js.map",
     "index.html": "/SynchroniCity-Mindmap/index.html",
-    "precache-manifest.548f59866a0a085a12e166893c546df8.js": "/SynchroniCity-Mindmap/precache-manifest.548f59866a0a085a12e166893c546df8.js",
+    "precache-manifest.53f00595146bd828b8c346778888a2c9.js": "/SynchroniCity-Mindmap/precache-manifest.53f00595146bd828b8c346778888a2c9.js",
     "service-worker.js": "/SynchroniCity-Mindmap/service-worker.js",
     "static/css/2.17e5ed98.chunk.css.map": "/SynchroniCity-Mindmap/static/css/2.17e5ed98.chunk.css.map",
-    "static/css/main.3fb5d2eb.chunk.css.map": "/SynchroniCity-Mindmap/static/css/main.3fb5d2eb.chunk.css.map",
+    "static/css/main.4cd38afc.chunk.css.map": "/SynchroniCity-Mindmap/static/css/main.4cd38afc.chunk.css.map",
+    "static/js/2.831a436c.chunk.js.LICENSE": "/SynchroniCity-Mindmap/static/js/2.831a436c.chunk.js.LICENSE",
     "static/media/Card_Result_Active.svg": "/SynchroniCity-Mindmap/static/media/Card_Result_Active.717065fb.svg",
     "static/media/Close_Container.svg": "/SynchroniCity-Mindmap/static/media/Close_Container.f3d57f83.svg",
     "static/media/Topics.css": "/SynchroniCity-Mindmap/static/media/bkgn_generic_top.e87f9bba.png",
@@ -24,10 +25,10 @@
     "static/media/search.png": "/SynchroniCity-Mindmap/static/media/search.445f2174.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.aed966f6.js",
+    "static/js/runtime-main.1128123d.js",
     "static/css/2.17e5ed98.chunk.css",
-    "static/js/2.95505e67.chunk.js",
-    "static/css/main.3fb5d2eb.chunk.css",
-    "static/js/main.f13486a3.chunk.js"
+    "static/js/2.831a436c.chunk.js",
+    "static/css/main.4cd38afc.chunk.css",
+    "static/js/main.339bf312.chunk.js"
   ]
 }
