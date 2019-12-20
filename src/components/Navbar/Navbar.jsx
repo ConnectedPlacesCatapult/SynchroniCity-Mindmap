@@ -11,7 +11,7 @@ const Navbar = () => {
 
     return (
         <div id="navbar" className="navbar">
-            <img className="navbarLogo" src={require("../../images/synchronicity_logo_black.svg")} alt="Synchronicity Logo" onClick={() => { navigate.topic(); }} />
+            <img className="navbarLogo" src={require("../../images/logo_animated3.gif")} alt="Synchronicity Logo" onClick={() => { navigate.topic(); }} />
             <ul>
                 <li id="navAbout" onClick={() => { navigate.about(); }}>About</li>
                 <li id="navGI" onClick={() => { navigate.gi(); }}>Get Involved</li>

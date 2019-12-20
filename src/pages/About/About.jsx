@@ -12,7 +12,7 @@ const About = () => (
                 <img id="DescriptionBottomBox" src={require('../../images/Description_Box_Bottom.svg')}/> 
             </div>
             <div id="AboutTopBoxContainer" className="col-lg-7 col-md-7 col-sm-10 offset-lg-0 offset-md-0 offset-sm-1">
-                <img id="AboutTopBox" src={require('../../images/Top_Box_About.svg')}/>
+                <img id="AboutTopBox" src={require('../../images/Top_Box_About.png')}/>
                 <div id="aboutContent">
                     <h4 id="initialHeader">The Synchronicity standards catalogue is a prototype tool which aims to help match cities and technology service providers with standards.</h4>
                     <p>It does this by bringing together standards for Smart Cities from many organisations into one place to make it easier to identify what standards to use, to create a more discoverable, open and collaborative standards marketplace.</p>
