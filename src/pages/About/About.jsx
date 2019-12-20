@@ -4,15 +4,15 @@ import './About.css';
 const About = () => (
     <div id="aboutSection">
         <div className="row aboutRow">
-            <div className="col-lg-3 col-md-3 col-sm-10 offset-lg-1 offset-md-1 offset-sm-1">
+            <div id="AboutSectionBox" className="col-lg-3 col-md-3 col-sm-10 offset-lg-1 offset-md-1 offset-sm-1">
                 <div id="aboutSectionDescription">
                     <h2>About the tool</h2>
                     <p>A new tool to help match cities and technology service providers with standards. Creating a more discoverable, open and collaborative standards marketplace.</p>
                 </div>
                 <img id="DescriptionBottomBox" src={require('../../images/Description_Box_Bottom.svg')}/> 
             </div>
-            <div id="AboutTopBoxContainer" className="col-lg-7 col-md-7 col-sm-10 offset-lg-0 offset-md-0 offset-sm-1">
-                <img id="AboutTopBox" src={require('../../images/Top_Box_About.svg')}/>
+            <div id="AboutTopBoxContainer" className="col-lg-7 col-md-7 col-sm-10 offset-lg-0 offset-md-0 offset-sm-0">
+                <img id="AboutTopBox" src={require('../../images/Top_Box_About.png')}/>
                 <div id="aboutContent">
                     <h4 id="initialHeader">The Synchronicity standards catalogue is a prototype tool which aims to help match cities and technology service providers with standards.</h4>
                     <p>It does this by bringing together standards for Smart Cities from many organisations into one place to make it easier to identify what standards to use, to create a more discoverable, open and collaborative standards marketplace.</p>

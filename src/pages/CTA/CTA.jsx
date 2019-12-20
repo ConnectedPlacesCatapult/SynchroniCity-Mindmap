@@ -11,7 +11,8 @@ const CTA = () => (
                 </div>
                 <img id="DescriptionBottomBox" src={require('../../images/Description_Box_Bottom.svg')}/> 
             </div>
-            <div id="GetInvolvedTopBoxContainer" className="col-lg-7 col-md-7 col-sm-10 offset-lg-0 offset-md-0 offset-sm-1"><img id="GetInvolvedTopBox" src={require('../../images/Top_Box_GetInvolved.svg')}/>
+            <div id="GetInvolvedTopBoxContainer" className="col-lg-7 col-md-7 col-sm-10 offset-lg-0 offset-md-0 offset-sm-1">
+                <img id="GetInvolvedTopBox" src={require('../../images/Top_Box_GetInvolved.png')}/>
                 <div id="CTAContent">
                     <h4 id="initialCTAHeader">The tool aims to help match cities and technology service providers with standards.</h4>
                     <p>Creating a more discoverable, open and collaborative standards marketplace.  Ultimately it aims to help adoption of standards by making it easier to find standards for smart cities.  It also aims to help standards bodies by making their content more accessible and helping coordinate standards development work.  You can get involved in the following ways:</p>
