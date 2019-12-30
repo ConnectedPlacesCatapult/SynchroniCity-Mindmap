@@ -8,17 +8,17 @@ import { importSheet, getTag0, getTags, rows, tag0Unique, tagAllUnique, filtered
 import generateContent from './functions/generateContent';
 
 
+
 it('renders without crashing', () => {
   const div = document.createElement('div');
   ReactDOM.render(<App />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
 
-it('renders correctly', () => {
+it('App renders correctly', () => {
   const tree = renderer.create(<App />).toJSON()
   expect(tree).toMatchSnapshot()
-})
-
+});
 
 it('returns shallow App', () => {
   const renderer = new ShallowRenderer();
@@ -26,6 +26,7 @@ it('returns shallow App', () => {
   const result = renderer.getRenderOutput();
   expect(result.type).toBe('div');
 });
+
 
 expect.extend({
   toContainObject(received, argument) {

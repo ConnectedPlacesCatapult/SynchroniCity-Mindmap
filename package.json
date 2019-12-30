@@ -24,7 +24,8 @@
     "eject": "react-scripts eject",
     "setup": "npm i && npm audit fix",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "test:watch": "npm run test -- --watch"
   },
   "eslintConfig": {
     "extends": "react-app"
