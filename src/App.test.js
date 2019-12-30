@@ -1,11 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import { shallow, mount } from 'enzyme';
 import renderer from 'react-test-renderer'
 import ShallowRenderer from 'react-test-renderer/shallow';
-import { importSheet, getTag0, getTags, rows, tag0Unique, tagAllUnique, filteredStandards, filteredSubStandards, getFilteredSubStandards } from './api/spreadsheet';
-import generateContent from './functions/generateContent';
 
 
 
