@@ -84,8 +84,8 @@ const Topics = () => {
 
                     </div> */}
 
-                <div class="modal fade" id="resultContent" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
+                <div className="modal fade" id="resultContent" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal-dialog" role="document">
                         {/* <div class="modal-content"> */}
 
                         {/* <div class="modal-body">

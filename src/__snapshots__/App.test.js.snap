@@ -1,0 +1,584 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="App"
+>
+  <div
+    id="header"
+  >
+    <img
+      alt="Placeholder Logo"
+      id="headerLogo"
+      src="placeholder_header_logo.png"
+    />
+    <ul>
+      <li
+        className="headerLink"
+      >
+        home
+      </li>
+      <li
+        className="headerLink"
+      >
+        cities
+      </li>
+      <li
+        className="headerLink"
+      >
+        about
+      </li>
+      <li
+        className="headerLink"
+      >
+        news
+      </li>
+      <li
+        className="headerLink"
+      >
+        events
+      </li>
+      <li
+        className="headerLink"
+      >
+        contact
+      </li>
+      <li
+        className="headerLink"
+      >
+        become a member
+      </li>
+      <div
+        id="headerIcons"
+      >
+        <img
+          alt="search"
+          id="search"
+          src="search.png"
+        />
+        <img
+          alt="hamburger"
+          id="hamburger"
+          src="hamburger.png"
+        />
+      </div>
+    </ul>
+  </div>
+  <div
+    className="navbar"
+    id="navbar"
+  >
+    <img
+      alt="Synchronicity Logo"
+      className="navbarLogo"
+      onClick={[Function]}
+      src="logo_animated3.gif"
+    />
+    <ul>
+      <li
+        id="navAbout"
+        onClick={[Function]}
+      >
+        About
+      </li>
+      <li
+        id="navGI"
+        onClick={[Function]}
+      >
+        Get Involved
+      </li>
+      <li
+        id="navTopic"
+        onClick={[Function]}
+      >
+        Topic 
+      </li>
+      <li
+        id="seperator"
+      >
+        |
+      </li>
+      <li
+        id="navSubtopic"
+        onClick={[Function]}
+      >
+        Subtopic
+      </li>
+    </ul>
+  </div>
+  <section
+    id="section2"
+  >
+    <div
+      className="row"
+      id="topicsSection"
+    >
+      <div
+        className="col-lg-2 col-md-2 col-sm-10 offset-lg-1 offset-md-1 offset-sm-1 topicDescriptionDiv"
+        id="TopicsTopBoxContainer"
+      >
+        <h2
+          className="topicsHeader"
+        >
+          Select topic
+        </h2>
+        <p
+          id="topicsText"
+        >
+          All standards are categorised into these topics. Please select one to continue
+        </p>
+        <img
+          id="DescriptionBottomBox"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "Description_Box_Bottom.svg",
+            }
+          }
+        />
+      </div>
+      <div
+        className="col-lg-8 col-md-8 col-sm-10"
+        id="tag0Container"
+      />
+    </div>
+    <div
+      id="resultsSection"
+    >
+      <div
+        id="subtopicNavigationContainer"
+      >
+        <div
+          id="putElement"
+        >
+          <div
+            className="row"
+          >
+            <div
+              className="col-lg-12 col-md-12 col-sm-12 center z"
+            >
+              <div
+                id="chosenTopicImg"
+              />
+            </div>
+          </div>
+          <div
+            className="row"
+          >
+            <div
+              className="col-lg-4 col-md-6 col-sm-10 offset-lg-4 offset-md-3 offset-sm-1 center"
+            >
+              <h2
+                id="chosenTopic"
+              >
+                Chosen Topic
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div
+          className="row"
+        >
+          <div
+            className="col-lg-8 col-md-8 col-sm-10 offset-lg-2 offset-md-2 offset-sm-1 center"
+          >
+            <ul
+              id="topicList"
+            >
+              <div
+                className="all"
+              />
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        className="resultsRow row"
+        id="resultsRow"
+      >
+        <div
+          className="col-lg-2 col-md-2 col-sm-12 offset-lg-1 offset-md-1"
+        >
+          <h2
+            className="topicsHeader"
+          >
+            All Standards
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          </p>
+        </div>
+        <div
+          className="col-lg-8 col-md-8 col-sm-12"
+        >
+          <div
+            id="results"
+          />
+        </div>
+      </div>
+      <div
+        aria-hidden="true"
+        aria-labelledby="exampleModalLabel"
+        className="modal fade"
+        id="resultContent"
+        role="dialog"
+        tabIndex="-1"
+      >
+        <div
+          className="modal-dialog"
+          role="document"
+        >
+          <div
+            id="mymodal"
+          >
+            <img
+              id="modalImg"
+              src={
+                Object {
+                  "ReactComponent": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "render": [Function],
+                  },
+                  "__esModule": true,
+                  "default": "Card_Result_Active.svg",
+                }
+              }
+            />
+            <h1>
+              MY MODAL
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div
+    id="resultWrapper"
+  >
+    <div
+      className="standardsResult row"
+      id="standardsResult"
+    >
+      <div
+        id="backdrop"
+        onClick={[Function]}
+      />
+      <div
+        className="standardsContentContainer col-lg-6 col-md-6 col-sm-10 offset-lg-3 offset-md-3 offset-sm-1"
+      >
+        <img
+          id="resultTop"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "Close_Container.svg",
+            }
+          }
+        />
+        <div
+          id="closeStandard"
+          onClick={[Function]}
+        />
+        <div
+          id="titleAndSubtitle"
+        >
+          <h3
+            id="standardName"
+          >
+             Standard
+          </h3>
+          <h3
+            id="subTitle"
+          >
+             Subtitle
+          </h3>
+        </div>
+        <p
+          id="description"
+        >
+           Description
+        </p>
+        <div
+          id="URLDiv"
+        >
+          <a
+            href="#"
+            id="URL"
+            target="_blank"
+          >
+             link to standard
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    id="CTASection"
+  >
+    <div
+      className="row CTARow"
+    >
+      <div
+        className="col-lg-3 col-md-3 col-sm-10 offset-lg-1 offset-md-1 offset-sm-1"
+        id="CTASectionBox"
+      >
+        <div
+          id="CTASectionDescription"
+        >
+          <h2>
+            Get involved
+          </h2>
+          <p>
+            Work with us to help the adoption of standards for smart and sustainable cities and communities.
+          </p>
+        </div>
+        <img
+          id="DescriptionBottomBox"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "Description_Box_Bottom.svg",
+            }
+          }
+        />
+      </div>
+      <div
+        className="col-lg-7 col-md-7 col-sm-10 offset-lg-0 offset-md-0 offset-sm-1"
+        id="GetInvolvedTopBoxContainer"
+      >
+        <img
+          id="GetInvolvedTopBox"
+          src="Top_Box_GetInvolved.png"
+        />
+        <div
+          id="CTAContent"
+        >
+          <h4
+            id="initialCTAHeader"
+          >
+            The tool aims to help match cities and technology service providers with standards.
+          </h4>
+          <p>
+            Creating a more discoverable, open and collaborative standards marketplace.  Ultimately it aims to help adoption of standards by making it easier to find standards for smart cities.  It also aims to help standards bodies by making their content more accessible and helping coordinate standards development work.  You can get involved in the following ways:
+          </p>
+          <br />
+          <p>
+            <strong>
+              Cities and communities:
+            </strong>
+             We want cities and communities to get involved by using the tool and getting in touch to share your feedback plus any stories of how you have used standards yourselves.  You can also get in touch with any questions you might have.
+          </p>
+          <br />
+          <p>
+            <strong>
+              Standards bodies:
+            </strong>
+             We are looking to work with standards bodies who would like to further promote their standards for cities through this platform by helping work with us on how we develop this further and by contributing your content.
+          </p>
+          <br />
+          <p>
+            If you want to get involved, contact us at info@oascities.org.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    id="aboutSection"
+  >
+    <div
+      className="row aboutRow"
+    >
+      <div
+        className="col-lg-3 col-md-3 col-sm-10 offset-lg-1 offset-md-1 offset-sm-1"
+        id="AboutSectionBox"
+      >
+        <div
+          id="aboutSectionDescription"
+        >
+          <h2>
+            About the tool
+          </h2>
+          <p>
+            A new tool to help match cities and technology service providers with standards. Creating a more discoverable, open and collaborative standards marketplace.
+          </p>
+        </div>
+        <img
+          id="DescriptionBottomBox"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "Description_Box_Bottom.svg",
+            }
+          }
+        />
+      </div>
+      <div
+        className="col-lg-7 col-md-7 col-sm-10 offset-lg-0 offset-md-0 offset-sm-0"
+        id="AboutTopBoxContainer"
+      >
+        <img
+          id="AboutTopBox"
+          src="Top_Box_About.png"
+        />
+        <div
+          id="aboutContent"
+        >
+          <h4
+            id="initialHeader"
+          >
+            The Synchronicity standards catalogue is a prototype tool which aims to help match cities and technology service providers with standards.
+          </h4>
+          <p>
+            It does this by bringing together standards for Smart Cities from many organisations into one place to make it easier to identify what standards to use, to create a more discoverable, open and collaborative standards marketplace.
+          </p>
+          <br />
+          <p>
+            For Synchronicity, this helps you discover the standards that enable minimum interoperability (Minimum Interoperability Mechanisms), but also helps discover other standards that help with you with your journey ultimately enabling smart, sustainable cities and communities.  This includes for example:
+          </p>
+          <br />
+          <ul>
+            <li>
+              Guidance on what it means to be a smart city (see Smart City Governance &gt; Guidance)
+            </li>
+            <li>
+              Knowing which standards can help you best think about managing data or how to use AI (see Data Management & AI category)
+            </li>
+            <li>
+              What standards might help you when designing and procuring new street lighting within a public realm project (see Public Realm &gt; Street Lighting) or ICT systems and applications (see Smart City ICT)
+            </li>
+          </ul>
+          <br />
+          <p>
+            The tool allows you to choose from a set of 12 core topics, from standards that help city governance, data management and citizen service design through to standards that help with smart mobility, utilities and health. For example within the data governance and AI category, you can focus in on standards relating to data privacy. You will then be presented with key information about the standards that can help including an abstract and a link to where the standard can be obtained.
+          </p>
+          <p>
+            In the future, we would also like to evolve the tool to provide further functionality. Such as allowing cities to see use cases, to learn from others that have used the standard and data on how popular the standard is.  For standards bodies, we would like this to be a tool to help see where there are clashes between standard or gaps that exist, to help coordination and development.
+          </p>
+          <h4
+            className="aboutHeader"
+          >
+            Vision:
+          </h4>
+          <p>
+            Standards are the building blocks of the digital single marketplace.
+          </p>
+          <ul>
+            <li>
+              For the supply-side, they enable reusability, replicability and scalability.
+            </li>
+            <li>
+              For the demand side, they enable replaceability, portability and comparability.
+            </li>
+          </ul>
+          <p>
+            For all parties, they enable interoperability, reducing risk, increasing investment and ultimately driving innovation.
+          </p>
+          <p>
+            Yet with thousands of standards for smart cities, how does a city or technology service provide decide which standards to use?  And for standards bodies, how do they coordinate their work to ensure they are not repeating work, further contributing to a fragmented standards marketplace.
+          </p>
+          <p>
+            Imagine if you could discover all global smart city standards in one single, user friendly platform, compare them, see who is using them and learn from other peoples experiences.  The vision for the standards library is to help create a more open, user friendly, interoperable standards marketplace, by providing a platform for standards organisations to collaborate and for cities and technology services providers to easily discover, decide upon and share what standards they are using.
+          </p>
+          <h4
+            className="aboutHeader"
+          >
+            Why?
+          </h4>
+          <p>
+            User research conducted by Connected Places Catapult and OASC identified that cities have a challenge with navigating the complex standards landscape, with X% of cities surveyed not knowing what standards to use.  Standards Development Organisations also have a challenge in coordinating work, often developing conflicting standards e.g. there are multiple IoT reference architectures.  This challenge has led to the development of a new 
+            <strong>
+              joint task force between ITU, ISO and IEC
+            </strong>
+            , the three main international standards bodies in order to better coordinate standards.
+          </p>
+          <p>
+            The vision for the  online standards navigation tool is to help bring together the multiple standards available for smart cities and present this in an easy to navigate way for cities and technology service providers, so they can find what standards are relevant to what they are working on and see who else is using them, to help decide which standards to use.  For standards bodies, the vision is that this is a tool to enable collaboration by better coordination of standards development, helping to see where there are gaps as well as a tool to help the uptake of standards.
+          </p>
+          <br />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="row"
+    id="footer"
+  >
+    <div
+      className="col-lg-4 col-md-4 col-sm-4 center"
+    >
+      <img
+        alt="Placeholder Logo"
+        id="footerLogo"
+        src="placeholder_header_logo.png"
+      />
+    </div>
+    <div
+      className="col-lg-4 col-md-4 col-sm-4 footerMiddleCol"
+    >
+      <h3>
+        newsletter
+      </h3>
+      <p>
+        Subscribe to our mailing list
+      </p>
+      <input
+        type="text"
+      />
+      <button
+        id="footerButton"
+      >
+        subscribe
+      </button>
+    </div>
+    <div
+      className="col-lg-4 col-md-4 col-sm-4 center"
+    >
+      <div
+        id="contain"
+      >
+        <img
+          className="footerPlaceholderImage"
+          src="placeholder_image_footer.png"
+        />
+        <img
+          className="footerPlaceholderImage"
+          src="placeholder_image_footer.png"
+        />
+        <img
+          className="footerPlaceholderImage"
+          src="placeholder_image_footer.png"
+        />
+        <img
+          className="footerPlaceholderImage"
+          src="placeholder_image_footer.png"
+        />
+        <img
+          className="footerPlaceholderImage"
+          src="placeholder_image_footer.png"
+        />
+        <img
+          className="footerPlaceholderImage"
+          src="placeholder_image_footer.png"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

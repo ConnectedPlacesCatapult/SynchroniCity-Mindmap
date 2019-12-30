@@ -5,7 +5,7 @@ export let rows;
 export let tag0Unique;
 export let tagAllUnique;
 export let filteredStandards = [];
-export let filteredSubStandards=[];
+export let filteredSubStandards = [];
 
 export const getTag0 = () => {
 
@@ -66,8 +66,8 @@ export const getFilteredSubStandards = (filteredStandards, array, arraySelector)
             tagName = tagStr.concat(j)
         if (array.includes(filteredStandards[i][tagName]) && !filteredSubStandards.includes(filteredStandards[i]) && filteredStandards[i][tagName] === arraySelector) {
             filteredSubStandards.push(filteredStandards[i]);
-            }
         }
+        }   
     }
     resolve(console.log(filteredSubStandards))
     
