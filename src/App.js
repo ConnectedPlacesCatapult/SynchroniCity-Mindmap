@@ -20,7 +20,8 @@ function App() {
     getTag0().then(() => { getTags(rows, subtopic) })
       .then(() => { generateContent.tag0(); })
       .then(() => { generateContent.assignTopicId(); })
-      .then(() => { console.log(tag0Unique); });
+      .then(() => { console.log(tag0Unique); })
+      .then(() => { console.log(rows); });
   });
   // tag0Unique stores all topics
   // tagAllUnique stores all subtopics based on a topic

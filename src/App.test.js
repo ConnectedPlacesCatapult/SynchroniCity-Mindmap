@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import renderer from 'react-test-renderer'
+import renderer from 'react-test-renderer';
 import ShallowRenderer from 'react-test-renderer/shallow';
+import { shallow } from 'enzyme';
 
+
+jest.mock('./api/spreadsheet');
 
 
 it('renders without crashing', () => {
@@ -24,28 +27,31 @@ it('returns shallow App', () => {
   expect(result.type).toBe('div');
 });
 
-
-expect.extend({
-  toContainObject(received, argument) {
-    const pass = this.equals(received, 
-      expect.arrayContaining([
-        expect.objectContaining(argument)
-      ])
-    )
-    if (pass) {
-      return {
-        message: () => (`expected ${this.utils.printReceived(received)} not to contain object ${this.utils.printExpected(argument)}`),
-        pass: true
-      }
-    } else {
+it('Object Array tests', () => {
+  expect.extend({
+    toContainObject(received, argument) {
+      const pass = this.equals(received, 
+        expect.arrayContaining([
+          expect.objectContaining(argument)
+        ])
+      )
+      if (pass) {
         return {
-        message: () => (`expected ${this.utils.printReceived(received)} to contain object ${this.utils.printExpected(argument)}`),
-        pass: false
+          message: () => (`expected ${this.utils.printReceived(received)} not to contain object ${this.utils.printExpected(argument)}`),
+          pass: true
+        }
+      } else {
+          return {
+          message: () => (`expected ${this.utils.printReceived(received)} to contain object ${this.utils.printExpected(argument)}`),
+          pass: false
+        }
       }
     }
-  }
-})
+  })
+});
 
+// TODO //
+// figure out how to import this object array from asyncronous function 
 const state = [
   { 0: "Internet of Things",
     1: "Public Realm",
@@ -61,8 +67,14 @@ const state = [
     11: "Utilities"},
 ]
 
-
 test('check tag0Unique array contains correct objects', () => {
-  expect(state).toContainObject({ 5: 'Smart City Governance' })
-  expect(state).not.toContainObject({ 10: 'Environmenta' })
+    const wrapper = shallow(<App />);
+
+    setTimeout(() => {
+      wrapper.update();
+      expect(state).toContainObject({ 5: 'Smart City Governance' });
+      expect(state).not.toContainObject({ 10: 'Environmenta' });
+
+      done();
+    })
 });
