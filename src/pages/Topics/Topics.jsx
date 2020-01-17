@@ -10,12 +10,13 @@ const Topics = () => {
             { /* ========== START OF TOPICS SECTION ========== */}
 
             <div id="topicsSection" className="row">
-                <div id="TopicsTopBoxContainer" className="col-lg-2 col-md-2 col-sm-10 offset-lg-1 offset-md-1 offset-sm-1 topicDescriptionDiv">
+                <div id="TopicsTopBoxContainer" className="col-lg-2 col-md-2 col-sm-10 offset-lg-1 offset-md-1 offset-sm-1">
+                    <div id="topicSectionDescription">
                     <h2 className="topicsHeader">Select topic</h2>
                     <p id="topicsText">All standards are categorised into these topics. Please select one to continue</p>
-                    <img id="DescriptionBottomBox" src={require('../../images/Description_Box_Bottom.svg')}/> 
                 </div>
-
+                <img id="TopicDescriptionBottomBox" src={require('../../images/Description_Box_Bottom.svg')}/> 
+                </div>
                 <div id="tag0Container" className="col-lg-8 col-md-8 col-sm-10">
                 </div>
             </div>
