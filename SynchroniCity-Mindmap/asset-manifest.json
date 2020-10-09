@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/SynchroniCity-Mindmap/static/css/main.fb6019cf.chunk.css",
+    "main.js": "/SynchroniCity-Mindmap/static/js/main.8dea537c.chunk.js",
+    "main.js.map": "/SynchroniCity-Mindmap/static/js/main.8dea537c.chunk.js.map",
+    "runtime-main.js": "/SynchroniCity-Mindmap/static/js/runtime-main.1128123d.js",
+    "runtime-main.js.map": "/SynchroniCity-Mindmap/static/js/runtime-main.1128123d.js.map",
+    "static/css/2.17e5ed98.chunk.css": "/SynchroniCity-Mindmap/static/css/2.17e5ed98.chunk.css",
+    "static/js/2.9d928bbc.chunk.js": "/SynchroniCity-Mindmap/static/js/2.9d928bbc.chunk.js",
+    "static/js/2.9d928bbc.chunk.js.map": "/SynchroniCity-Mindmap/static/js/2.9d928bbc.chunk.js.map",
+    "index.html": "/SynchroniCity-Mindmap/index.html",
+    "precache-manifest.c5c407931ed8add812e461002a960980.js": "/SynchroniCity-Mindmap/precache-manifest.c5c407931ed8add812e461002a960980.js",
+    "service-worker.js": "/SynchroniCity-Mindmap/service-worker.js",
+    "static/css/2.17e5ed98.chunk.css.map": "/SynchroniCity-Mindmap/static/css/2.17e5ed98.chunk.css.map",
+    "static/css/main.fb6019cf.chunk.css.map": "/SynchroniCity-Mindmap/static/css/main.fb6019cf.chunk.css.map",
+    "static/js/2.9d928bbc.chunk.js.LICENSE": "/SynchroniCity-Mindmap/static/js/2.9d928bbc.chunk.js.LICENSE",
+    "static/media/Card_Result_Active.svg": "/SynchroniCity-Mindmap/static/media/Card_Result_Active.717065fb.svg",
+    "static/media/Topics.css": "/SynchroniCity-Mindmap/static/media/bkgn_generic_top.e87f9bba.png",
+    "static/media/Description_Box_Bottom.svg": "/SynchroniCity-Mindmap/static/media/Description_Box_Bottom.5bbc337d.svg",
+    "static/media/Top_Box_About.png": "/SynchroniCity-Mindmap/static/media/Top_Box_About.c77e8acb.png",
+    "static/media/Top_Box_GetInvolved.png": "/SynchroniCity-Mindmap/static/media/Top_Box_GetInvolved.a82913c7.png",
+    "static/media/App.css": "/SynchroniCity-Mindmap/static/media/bkgn_generic.e52c1fb1.jpg",
+    "static/media/logo_animated3.gif": "/SynchroniCity-Mindmap/static/media/logo_animated3.4feffd86.gif",
+    "static/media/search.png": "/SynchroniCity-Mindmap/static/media/search.445f2174.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1128123d.js",
+    "static/css/2.17e5ed98.chunk.css",
+    "static/js/2.9d928bbc.chunk.js",
+    "static/css/main.fb6019cf.chunk.css",
+    "static/js/main.8dea537c.chunk.js"
+  ]
+}
