@@ -9,10 +9,10 @@ const About = () => (
                     <h2>About the tool</h2>
                     <p>A new tool to help match cities and technology service providers with standards. Creating a more discoverable, open and collaborative standards marketplace.</p>
                 </div>
-                <img id="DescriptionBottomBox" src={require('../../images/Description_Box_Bottom.svg')}/> 
+                <img id="DescriptionBottomBox" src={require('../../images/Description_Box_Bottom.svg')} />
             </div>
             <div id="AboutTopBoxContainer" className="col-lg-7 col-md-7 col-sm-10 offset-lg-0 offset-md-0 offset-sm-0">
-                <img id="AboutTopBox" src={require('../../images/Top_Box_About.png')}/>
+                <img id="AboutTopBox" src={require('../../images/Top_Box_About.png')} />
                 <div id="aboutContent">
                     <h4 id="initialHeader">The Synchronicity standards catalogue is a prototype tool which aims to help match cities and technology service providers with standards.</h4>
                     <p>It does this by bringing together standards for Smart Cities from many organisations into one place to make it easier to identify what standards to use, to create a more discoverable, open and collaborative standards marketplace.</p>
@@ -37,9 +37,17 @@ const About = () => (
                     <p>Yet with thousands of standards for smart cities, how does a city or technology service provide decide which standards to use?  And for standards bodies, how do they coordinate their work to ensure they are not repeating work, further contributing to a fragmented standards marketplace.</p>
                     <p>Imagine if you could discover all global smart city standards in one single, user friendly platform, compare them, see who is using them and learn from other peoples experiences.  The vision for the standards library is to help create a more open, user friendly, interoperable standards marketplace, by providing a platform for standards organisations to collaborate and for cities and technology services providers to easily discover, decide upon and share what standards they are using.</p>
                     <h4 className="aboutHeader">Why?</h4>
-                    <p>User research conducted by Connected Places Catapult and OASC identified that cities have a challenge with navigating the complex standards landscape, with X% of cities surveyed not knowing what standards to use.  Standards Development Organisations also have a challenge in coordinating work, often developing conflicting standards e.g. there are multiple IoT reference architectures.  This challenge has led to the development of a new <strong>joint task force between ITU, ISO and IEC</strong>, the three main international standards bodies in order to better coordinate standards.</p>
+                    <p>User research conducted by Connected Places Catapult and OASC identified that cities have a challenge with navigating the complex standards landscape, with 47% of cities surveyed not knowing what standards to use.  Standards Development Organisations also have a challenge in coordinating work, often developing conflicting standards e.g. there are multiple IoT reference architectures.  This challenge has led to the development of a new <strong>joint task force between ITU, ISO and IEC</strong>, the three main international standards bodies in order to better coordinate standards.</p>
                     <p>The vision for the  online standards navigation tool is to help bring together the multiple standards available for smart cities and present this in an easy to navigate way for cities and technology service providers, so they can find what standards are relevant to what they are working on and see who else is using them, to help decide which standards to use.  For standards bodies, the vision is that this is a tool to enable collaboration by better coordination of standards development, helping to see where there are gaps as well as a tool to help the uptake of standards.</p>
                     <br />
+                    <div className="logoContainer">
+                        <img className="aboutLogos" src={require('../../images/Logo_CPC.png')} />
+                        <img className="aboutLogos" src={require('../../images/Logo_OASC.png')} />
+                        <a href="https://synchronicity-iot.eu">
+                            <img className="aboutLogos" src={require('../../images/Logo_synchronicity.svg')} />
+                        </a>
+                        <img className="aboutLogos" src={require('../../images/Logo_H2020.svg')} />
+                    </div>
                 </div>
             </div>
         </div>
