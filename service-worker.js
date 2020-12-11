@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/SynchroniCity-Mindmap/precache-manifest.91c15fb0e46243b79598149660c3ba41.js"
+  "/SynchroniCity-Mindmap/precache-manifest.ffe6b173efe5aac2912802ce24e8b9b2.js"
 );
 
 self.addEventListener('message', (event) => {
