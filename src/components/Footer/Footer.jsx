@@ -25,7 +25,7 @@ const Footer = () => (
         </div> */}
         <div className="center">
             <img className="footerEuCommissionImage" src={require('../../images/Logo_EUComussion.png')} />
-            <p>This project has received funding from the European Union’s Horizon 2020 research and innovation program under the grant agreement No. 645198</p>
+            <p>This project has received funding from the European Union’s Horizon 2020 research and innovation program under the grant agreement No. 732240</p>
         </div>
 
 

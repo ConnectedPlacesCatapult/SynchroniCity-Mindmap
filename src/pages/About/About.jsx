@@ -27,6 +27,7 @@ const About = () => (
                     <br />
                     <p>The tool allows you to choose from a set of 12 core topics, from standards that help city governance, data management and citizen service design through to standards that help with smart mobility, utilities and health. For example within the data governance and AI category, you can focus in on standards relating to data privacy. You will then be presented with key information about the standards that can help including an abstract and a link to where the standard can be obtained.</p>
                     <p>In the future, we would also like to evolve the tool to provide further functionality. Such as allowing cities to see use cases, to learn from others that have used the standard and data on how popular the standard is.  For standards bodies, we would like this to be a tool to help see where there are clashes between standard or gaps that exist, to help coordination and development.</p>
+                    <p>Work (bringing the standards catalogue to life) by CPC, operated by OASC</p>
                     <h4 className="aboutHeader">Vision:</h4>
                     <p>Standards are the building blocks of the digital single marketplace.</p>
                     <ul>
